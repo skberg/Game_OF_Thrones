@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "MyWebFont";
+  src: url("Gmt/GameofThrones.woff2") format("woff2") url("Gmt/GameofThrones.woff") format("woff");
+}
+h1 {
+  font-family: "MyWebFont";
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=output.css.map */
