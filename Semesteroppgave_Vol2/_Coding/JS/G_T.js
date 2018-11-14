@@ -3,55 +3,88 @@ fetch('https://anapioficeandfire.com/api/characters')
         return response.json();
     })
     .then(function(myJson) {
-        jævlapik(myJson)
+        CardElm(myJson);
     });    
 
 
-  function jævlapik(myJson){
     var myCont = document.getElementById("Conts");
-    var cards = document.createElement("div");
-    cards.setAttribute("class", "Douche");
-    for (var i = 0; i < myJson.length; i++) {
-        console.log("Test"+i);
-        var MyDiv = document.createElement("div");
 
-        var heDing = document.createElement("h4");      //h4 
-        
-        // var loDing = document.createElement("div");   //ide 1
-        // var loDing2 = document.createElement("div");  //id 2
-        // var maSter = document.createElement("div");   //texst
-        // var istum = document.createElement("i");            //i element
-        // var unDheding = document.createElement("h5");       //h5 
-        // var teXste = document.createElement("p");       //mini over skrift
-        // var texIste = document.createElement("i");      // i element
-        // var buTTons = document.createElement("button"); 
 
-// Navn.setAttribute("class", "classenavn" + i)
-        console.log(heDing);
+  function CardElm(myJson){
     
-         MyDiv.setAttribute("class" , "card");
-         MyDiv.setAttribute("id", i);
-         cards.appendChild(MyDiv);
-         MyDiv.appendChild(heDing);
+    
+   
+    var cards = document.createElement("container");
+   
+    cards.setAttribute("class", "cardElement");
+    
+    
+    
+    for (var i = 0; i < myJson.length; i++) {
+
+
+        var MyDiv = document.createElement("div");
+        var MyDiv2 = document.createElement("h1");
+        var prag = document.createTextNode("ptest")
+         //h4 
+   
+       
+
+
+
+        
+        
+
+
+        Conts.appendChild(cards);
+        myCont.appendChild(cards);
+        
+        cards.appendChild(MyDiv);
+        MyDiv.appendChild(MyDiv2);
+        MyDiv2.appendChild(prag);
+      
+        
+    
+       
+        
+
+
+
+
+
+         MyDiv.setAttribute("class" , "[ cards ]", 'id', + i);
+         MyDiv.setAttribute('num', i);
+         MyDiv2.setAttribute('prag', i);
+        
+      
+        
+         
+       
+        console.log(prag);
+      
+       
+        
   
 
       
         
-        
+      
         MyDiv.innerHTML = "card" + i;
-        heDing.innerHTML = "dette er en tekst ";
+        MyDiv.innerHTML = "heDing" + i;
+    
+        MyDiv2.innerHTML = "This is a test card for Noroff it is number  " + i;
+        prag.innerHTML = "hello World";
+
+      
         
 
     }
-    Conts.appendChild(cards);
-    console.log(myJson);
+  
+   //
+   
 
-  }
-
-  var body = document.getElementById("bd");
+  } 
 
 
-  //for loop to make 10 card 
-//   for (var i = 1; i < 10; i++) {
-    
-//   }
+
+

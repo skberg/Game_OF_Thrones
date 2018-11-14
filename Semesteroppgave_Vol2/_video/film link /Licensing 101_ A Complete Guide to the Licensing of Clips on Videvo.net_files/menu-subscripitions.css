@@ -1,0 +1,136 @@
+
+    #menu-item-3600 {
+        display: none;
+    }
+
+    .light-icon {
+        margin-right: 0.5em;
+    }
+
+    .hide-item {
+        display: none !important;
+    }
+
+    .filter-checkbox {
+        display: inline-block;
+        margin-top: 0.2em;
+        text-transform: uppercase;
+        color: #2762ab;
+    }
+
+    .filter-checkbox span {
+        margin-top: 0.25em;
+        margin-right: 0.5em;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+
+    .light-icon-div {
+        width: 15px;
+        height: 27px;
+        background-size:contain;
+    }
+
+    .subscripition {
+        position: absolute;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        right: 0.5em;
+        top: 0.5em;
+        background-color: black;
+    }
+
+    .subscripition-popup {
+        position: absolute;
+        bottom: 1em;
+        right: 1em;
+        color: #fff;
+        background-color: black;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        text-transform: uppercase;
+    }
+
+    .subscripition-popup.free-sub-popup {
+        background-color: #0D50A1;
+        padding: 0.5em;
+    }
+
+    .subscripition-popup div,
+    .subscripition-popup span {
+        display: inline-block;
+        font-size: 11px;
+        vertical-align: middle;
+        margin-right: 5px;
+        color: white;
+    }
+
+    .checkbox-filters {
+        min-width: 340px;
+        margin-bottom: 20px;
+        float:left;
+    }
+
+    @media screen and (max-width: 1116px) and (min-width: 890px) {
+        .checkbox-filters {
+            margin-left: 20px;
+        }
+    }
+
+    @media screen and (max-width: 1570px) {
+        .menu_bar .after-login-menu .text-mht {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1330px) {
+        #flex-top .after-login-right-search {
+            min-width: 200px;
+        }
+    }
+
+    ul#menu-headertoprightmenu2 {
+        padding-left: 0 !important;
+    }
+
+    @media screen and (max-width: 460px) {
+        .header_bar .after-login-menu-logo {
+            display: none;
+        }
+        .after-login-header_bar #right-of-logo {
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+
+    @media screen and (max-width: 1700px) {
+        #flex-top .after-login-menu ,
+        .category_bar .after-login-menu {
+            margin-right: 1em;
+        }
+    }
+
+    @media screen and (max-width: 524px) and (min-width: 455px) {
+        .upgrade-light:before {
+            content: "" !important;
+        }
+    }
+
+    @media screen and (max-width: 370px) {
+        .upgrade-light:before {
+            content: "" !important;
+        }
+    }
+
+    .subscripition.free-sub {
+        padding: 0px;
+    }
+
+    .free-sub .light-icon-div {
+        width: 36px;
+        height: 34px;
+    }
