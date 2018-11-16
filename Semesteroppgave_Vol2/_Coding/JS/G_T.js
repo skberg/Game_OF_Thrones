@@ -1,4 +1,4 @@
-fetch('https://anapioficeandfire.com/api/characters')
+fetch('https://anapioficeandfire.com/api/houses')
     .then(function(response) {
         return response.json();
     })
@@ -31,15 +31,14 @@ fetch('https://anapioficeandfire.com/api/characters')
         
         
         for ( var y = 0; y < 1; y++ ){ 
-        var Mylistitem_Name = document.createElement("li");
-        var Mylistitem_Gend = document.createElement("li");
-        var Mylistitem_Contry = document.createElement("li");
-        var Mylistitem_Born = document.createElement("li");
+        var Mylistitem_Region = document.createElement("li");
+        var Mylistitem_Words = document.createElement("li");
+        var Mylistitem_Codeofarms= document.createElement("li");
         var Mylistitem_titles = document.createElement("li");
      
-        mylist.appendChild(Mylistitem_Gend);
-        mylist.appendChild(Mylistitem_Contry);
-        mylist.appendChild(Mylistitem_Born);
+        mylist.appendChild(Mylistitem_Region);
+        mylist.appendChild(Mylistitem_Words);
+        mylist.appendChild(Mylistitem_Codeofarms);
         mylist.appendChild(Mylistitem_titles);
 
 
@@ -59,9 +58,9 @@ fetch('https://anapioficeandfire.com/api/characters')
         MyImg.setAttribute('class', 'img');
         MyImg.setAttribute('class', "nod" + i);
         mylist.setAttribute('class','list');
-        Mylistitem_Gend.setAttribute('id', myJson[i].gender + i);
-        Mylistitem_Contry.setAttribute('id', myJson[i].culture + i);
-        Mylistitem_Born.setAttribute('id', myJson[i].born + i);
+        Mylistitem_Region.setAttribute('id', myJson[i].region + i);
+        Mylistitem_Words.setAttribute('id', myJson[i].words + i);
+        Mylistitem_Codeofarms.setAttribute('id', myJson[i].coatOfArms + i);
         Mylistitem_titles.setAttribute('id', myJson[i].titles + i);
 
         // mylist.setAttribute('id', myJson[i].gender + i);
@@ -80,7 +79,7 @@ fetch('https://anapioficeandfire.com/api/characters')
         MyDiv.appendChild(MyHEding);
         MyDiv.appendChild(Myprag);
         MyDiv.appendChild(MyImg);
-    
+  
         MyDiv.appendChild(mylist);
 
         cards.appendChild(MyDiv);
@@ -94,11 +93,12 @@ fetch('https://anapioficeandfire.com/api/characters')
 
 
 
-      Myprag.innerHTML = myJson[i].aliases;
+      Myprag.innerHTML = myJson[i].name;
   
-      Mylistitem_Gend.innerHTML = myJson[i].gender;
-      Mylistitem_Contry.innerHTML = myJson[i].culture;
-      Mylistitem_Born.innerHTML = myJson[i].born;
+   
+      Mylistitem_Region.innerHTML = myJson[i].culture;
+      Mylistitem_Codeofarms.innerHTML = myJson[i].born;
+      Mylistitem_Words.innerHTML = myJson[i].words;
       Mylistitem_titles.innerHTML = myJson[i].titles;
 
     }

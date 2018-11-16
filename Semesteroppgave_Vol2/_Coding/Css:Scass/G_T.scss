@@ -74,22 +74,21 @@ body{
            background-image: url(../Bilde/Banner_House_slange.svg);
            background-repeat: no-repeat;
            background-position: center;
-           background-color: transparent;
+          
           
            padding: 20px;
            width: 100%;
-           height: 50%;
+           height: 10%;
           
          
            
         
          }
          .list{
-          
-           margin: 10px;
+           background-color: black;
+           padding:20px;
            text-align: left;
            border-radius: 20px;
-          
 
          }
          img{
@@ -100,6 +99,7 @@ body{
           background-image: url(../Bilde/Banner_Whater.svg);
           background-repeat: no-repeat;
           background-position: center;
+
           padding: 20px;
           width: 100%;
           height: 100%;
