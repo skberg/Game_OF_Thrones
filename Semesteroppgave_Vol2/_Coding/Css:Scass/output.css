@@ -9,13 +9,13 @@ body {
 .logo {
   font-family: "Game of Tsrones";
   text-align: center;
+  padding: 30px;
 }
 .logo .heding {
   font-family: "Game of Tsrones";
   text-align: center;
   color: #d4af37;
   font-size: 50px;
-  padding: 20px;
   text-decoration: underline;
 }
 .logo .under_heding {
@@ -61,14 +61,13 @@ body {
   height: 50%;
 }
 #Conts .list {
-  margin: 10px;
-  padding: 10px;
   text-align: left;
   font-size: 0.8rem;
 }
-#Conts p {
+#Conts h5 {
   font-family: "Game of Tsrones";
   color: #d4af37;
+  min-height: 50px;
 }
 #Conts img {
   border: none;

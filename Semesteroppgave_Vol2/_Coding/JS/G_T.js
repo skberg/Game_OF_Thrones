@@ -28,8 +28,8 @@ fetch('https://anapioficeandfire.com/api/houses')
  // lager elementene 
         var MyDiv = document.createElement("div");
         var MyHEding = document.createElement("h1");
-        var Myprag= document.createElement("p");
-        var MyImg = document.createElement("img");
+        var Myprag= document.createElement("h5");
+        var MyImg = document.createElement("div");
         var mylist = document.createElement("ul");
         var myBar = document.createElement("div");
         var myBar2 = document.createElement("div");
