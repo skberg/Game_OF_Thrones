@@ -1,5 +1,8 @@
+console.log("you");
+
 fetch('https://anapioficeandfire.com/api/houses')
     .then(function(response) {
+        console.log(response);
         return response.json();
     })
     .then(function(myJson) {
@@ -28,6 +31,9 @@ fetch('https://anapioficeandfire.com/api/houses')
         var Myprag= document.createElement("p");
         var MyImg = document.createElement("img");
         var mylist = document.createElement("ul");
+        var myBar = document.createElement("div");
+        var myBar2 = document.createElement("div");
+        var myBar3 = document.createElement("div");
         
         
         for ( var y = 0; y < 1; y++ ){ 
@@ -62,6 +68,11 @@ fetch('https://anapioficeandfire.com/api/houses')
         Mylistitem_Words.setAttribute('id', myJson[i].words + i);
         Mylistitem_Codeofarms.setAttribute('id', myJson[i].coatOfArms + i);
         Mylistitem_titles.setAttribute('id', myJson[i].titles + i);
+        myBar.setAttribute('class', "me" );
+        myBar2.setAttribute('class', "me" );
+        myBar3.setAttribute('class', "me" );
+
+       
 
         // mylist.setAttribute('id', myJson[i].gender + i);
      
@@ -79,8 +90,14 @@ fetch('https://anapioficeandfire.com/api/houses')
         MyDiv.appendChild(MyHEding);
         MyDiv.appendChild(Myprag);
         MyDiv.appendChild(MyImg);
-  
+      
         MyDiv.appendChild(mylist);
+        MyDiv.appendChild(myBar);
+        MyDiv.appendChild(myBar2);
+        MyDiv.appendChild(myBar3);
+       
+      
+
 
         cards.appendChild(MyDiv);
         myCont.appendChild(cards);
@@ -96,10 +113,13 @@ fetch('https://anapioficeandfire.com/api/houses')
       Myprag.innerHTML = myJson[i].name;
   
    
-      Mylistitem_Region.innerHTML = myJson[i].culture;
-      Mylistitem_Codeofarms.innerHTML = myJson[i].born;
+      Mylistitem_Region.innerHTML = myJson[i].region;
+      Mylistitem_Codeofarms.innerHTML = myJson[i].coatOfArms;
       Mylistitem_Words.innerHTML = myJson[i].words;
       Mylistitem_titles.innerHTML = myJson[i].titles;
+      myBar.innerHTML= "<progress class='test' max='100' value='80'></progress>"
+      myBar2.innerHTML= "<progress class='test' max='100' value='40'></progress>"
+      myBar3.innerHTML= "<progress class='test' max='100' value='10'></progress>"
 
     }
   
@@ -107,6 +127,19 @@ fetch('https://anapioficeandfire.com/api/houses')
    
 
   } 
+  function move() {
+    var elem = document.getElementById("myBar"); 
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++; 
+            elem.style.width = width + '%'; 
+        }
+    }
+}
 
 
 

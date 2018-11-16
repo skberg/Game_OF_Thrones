@@ -25,7 +25,7 @@ body {
 
 #Conts {
   box-shadow: 2px 2px 60px black;
-  background-color: antiquewhite;
+  background-color: rgba(250, 235, 215, 0.692);
   border-radius: 34px;
   border: 60px solid transparent;
   border-image: url(../Bilde/Ramme.svg) 50 round;
@@ -34,8 +34,8 @@ body {
 #Conts .cardElement {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 40px;
   margin: 10px;
 }
 #Conts .cards {
@@ -43,24 +43,32 @@ body {
   padding: 20px;
   text-align: center;
   width: 100%;
-  height: 400px;
+  height: 560px;
   border-radius: 10px;
   color: white;
   border: none;
+}
+#Conts .cards:hover {
+  box-shadow: 2px 2px 17px -1px rgba(0, 0, 0, 0.75);
 }
 #Conts .nod1 {
   background-image: url(../Bilde/Banner_House_slange.svg);
   background-repeat: no-repeat;
   background-position: center;
-  padding: 20px;
+  background-origin: content-box;
+  padding: 10px;
   width: 100%;
-  height: 10%;
+  height: 50%;
 }
 #Conts .list {
-  background-color: black;
-  padding: 20px;
+  margin: 10px;
+  padding: 10px;
   text-align: left;
-  border-radius: 20px;
+  font-size: 0.8rem;
+}
+#Conts p {
+  font-family: "Game of Tsrones";
+  color: #d4af37;
 }
 #Conts img {
   border: none;
@@ -69,9 +77,17 @@ body {
   background-image: url(../Bilde/Banner_Whater.svg);
   background-repeat: no-repeat;
   background-position: center;
-  padding: 20px;
+  background-origin: content-box;
+  padding: 10px;
   width: 100%;
-  height: 100%;
+  height: 50%;
+}
+#Conts .test {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  padding: 5px;
+  box-shadow: inset 0 -1px 1px white;
 }
 
 #myVideo {
