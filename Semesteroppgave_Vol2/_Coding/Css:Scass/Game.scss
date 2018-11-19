@@ -41,24 +41,51 @@ body{
   background-color: rgba(153, 153, 153, 0.61);
   max-width: 1000px;
   margin: auto;
-  padding: 50px;
+
   border-radius: 50px;
   border: 50px solid transparent;
   border-image: url(../Bilde/Ramme.svg) 30 round;
+  display: grid;
+  grid-template: repeat(16, 1fr) / repeat(4, 1fr);
+  grid-gap: 2px;
 
-  .row{
-    margin: auto;
-  }
+ 
 .cardElement{
 
   background-color:#ffff;
   padding: 50px;
   height: 100%;
-  margin: 10px;
+  font-family: $GamFont;
+  text-align: center;
+  font-size: 10px;
+  color: $fontColr
+
+
+
+
+}
+    .cardElementWall{
+      background-color:lightblue;
+      padding: 50px;
+      height: 100%;
+      font-family: $GamFont;
+      text-align: center;
+      font-size: 10px;
+      color: $fontColr
+    }
+    .cardElement_Not{
+      
+      background-color:black;
+      padding: 50px;
+      height: 100%;
+      font-family: $GamFont;
+      text-align: center;
+      font-size: 10px;
+      color: $fontColr
+    }
 
 }
 
-}
 
 
 
@@ -71,26 +98,40 @@ body{
 
 
 
-
-
-
-
+.disk{ 
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  float: center;
+  background-color: aqua;
+  margin: 50px;
 
 
 
 
 
   .dice{
-    float: right;
-    width:32px;
-    background:#F5F5F5;
-    border:#999 1px solid;
-    padding:10px;
-    font-size:24px;
-    text-align:center;
-    margin:1px;
-}
 
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 30px;
+    display: inline;
+    padding: 10px;
+    background:#F5F5F5;
+    border-radius: 10px;
+  
+    font-size:24px;
+ 
+    
+  
+  }
+  
+
+
+
+
+}
 
 
 #myVideo {
@@ -113,3 +154,4 @@ body{
     z-index: -100;
   
   }
+ 

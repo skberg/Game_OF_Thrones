@@ -12,7 +12,18 @@ fetch('https://anapioficeandfire.com/api/houses')
 
     var myCont = document.getElementById("Conts");
 
-
+    var play1= {
+        house: "#", 
+        tile: 0
+    
+    
+    }
+    var play2= {
+        house: "#", 
+        tile: 0
+    
+    
+    }
   function CardElm(myJson){
     
     
@@ -23,7 +34,7 @@ fetch('https://anapioficeandfire.com/api/houses')
     
     
     
-    for (var i = 0; i < myJson.length; i++) {
+    for (let i = 0; i < myJson.length; i++) {
 
  // lager elementene 
         var MyDiv = document.createElement("div");
@@ -33,19 +44,19 @@ fetch('https://anapioficeandfire.com/api/houses')
         var mylist = document.createElement("ul");
         var myBar = document.createElement("div");
         var myBar2 = document.createElement("div");
-        var myBar3 = document.createElement("div");
+  
+        
         
         
         for ( var y = 0; y < 1; y++ ){ 
         var Mylistitem_Region = document.createElement("li");
         var Mylistitem_Words = document.createElement("li");
         var Mylistitem_Codeofarms= document.createElement("li");
-        var Mylistitem_titles = document.createElement("li");
-     
+
         mylist.appendChild(Mylistitem_Region);
         mylist.appendChild(Mylistitem_Words);
         mylist.appendChild(Mylistitem_Codeofarms);
-        mylist.appendChild(Mylistitem_titles);
+     
 
 
       
@@ -67,18 +78,30 @@ fetch('https://anapioficeandfire.com/api/houses')
         Mylistitem_Region.setAttribute('id', myJson[i].region + i);
         Mylistitem_Words.setAttribute('id', myJson[i].words + i);
         Mylistitem_Codeofarms.setAttribute('id', myJson[i].coatOfArms + i);
-        Mylistitem_titles.setAttribute('id', myJson[i].titles + i);
+
         myBar.setAttribute('class', "me" );
-        myBar2.setAttribute('class', "me" );
-        myBar3.setAttribute('class', "me" );
+        
 
        
 
         // mylist.setAttribute('id', myJson[i].gender + i);
      
+        MyDiv.addEventListener("click", function(){
+            if (play1.house ===  "#" ){
+                play1.house = myJson[i].name;
+
+            }else if (play2.house ===  "#" ){
+                play2.house = myJson[i].name;
+            }
+            console.log(play1);
+            console.log(play2);
+        })
+
+
+var local1 = localStorage.setItem("player 1", play1.house);
+       var test = localStorage.getItem("player 1");
+       console.log(test);
         
-       
-     
         
    
        
@@ -94,7 +117,7 @@ fetch('https://anapioficeandfire.com/api/houses')
         MyDiv.appendChild(mylist);
         MyDiv.appendChild(myBar);
         MyDiv.appendChild(myBar2);
-        MyDiv.appendChild(myBar3);
+
        
       
 
@@ -116,10 +139,10 @@ fetch('https://anapioficeandfire.com/api/houses')
       Mylistitem_Region.innerHTML = myJson[i].region;
       Mylistitem_Codeofarms.innerHTML = myJson[i].coatOfArms;
       Mylistitem_Words.innerHTML = myJson[i].words;
-      Mylistitem_titles.innerHTML = myJson[i].titles;
+   
       myBar.innerHTML= "<progress class='test' max='100' value='80'></progress>"
       myBar2.innerHTML= "<progress class='test' max='100' value='40'></progress>"
-      myBar3.innerHTML= "<progress class='test' max='100' value='10'></progress>"
+     
 
     }
   
@@ -140,6 +163,9 @@ fetch('https://anapioficeandfire.com/api/houses')
         }
     }
 }
+
+
+
 
 
 

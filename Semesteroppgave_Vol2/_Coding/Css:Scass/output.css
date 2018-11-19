@@ -29,18 +29,17 @@ body {
   border-radius: 34px;
   border: 60px solid transparent;
   border-image: url(../Bilde/Ramme.svg) 50 round;
-  margin: 25px;
+  margin: 15px;
 }
 #Conts .cardElement {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 40px;
-  margin: 10px;
 }
 #Conts .cards {
   background-color: #3b3b3b;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   width: 100%;
   height: 560px;
@@ -51,12 +50,19 @@ body {
 #Conts .cards:hover {
   box-shadow: 2px 2px 17px -1px rgba(0, 0, 0, 0.75);
 }
+#Conts .nod0 {
+  background-image: url(../Bilde/Banner_House_slange.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  width: 100%;
+  height: 50%;
+}
 #Conts .nod1 {
   background-image: url(../Bilde/Banner_House_slange.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-origin: content-box;
-  padding: 10px;
   width: 100%;
   height: 50%;
 }
@@ -69,24 +75,77 @@ body {
   color: #d4af37;
   min-height: 50px;
 }
-#Conts img {
-  border: none;
-}
 #Conts .nod2 {
   background-image: url(../Bilde/Banner_Whater.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-origin: content-box;
-  padding: 10px;
   width: 100%;
   height: 50%;
 }
-#Conts .test {
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
-  padding: 5px;
-  box-shadow: inset 0 -1px 1px white;
+#Conts .nod3 {
+  background-image: url(../Bilde/Icons/Red_Mauer.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  width: 100%;
+  height: 50%;
+}
+#Conts .nod4 {
+  background-image: url(../Bilde/Banner_Whater.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  width: 100%;
+  height: 50%;
+}
+#Conts .nod5 {
+  background-image: url(../Bilde/Icons/Blue_Hero.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  width: 100%;
+  height: 50%;
+}
+#Conts .nod6 {
+  background-image: url(../Bilde/Icons/Blue_Hero.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  width: 100%;
+  height: 50%;
+}
+#Conts .nod7 {
+  background-image: url(../Bilde/Icons/Orang_son.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  width: 100%;
+  height: 50%;
+}
+#Conts .nod8 {
+  background-image: url(../Bilde/Icons/Red_Skog.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  width: 100%;
+  height: 50%;
+}
+#Conts .nod9 {
+  background-image: url(../Bilde/Banner_Whater.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  width: 100%;
+  height: 50%;
+}
+#Conts .nod10 {
+  background-image: url(../Bilde/Banner_Whater.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  width: 100%;
+  height: 50%;
 }
 
 #myVideo {
