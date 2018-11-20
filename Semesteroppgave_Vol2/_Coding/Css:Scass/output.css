@@ -51,7 +51,7 @@ body {
   box-shadow: 2px 2px 17px -1px rgba(0, 0, 0, 0.75);
 }
 #Conts .nod0 {
-  background-image: url(../Bilde/Banner_House_slange.svg);
+  background-image: url(../Bilde/Icons/Algood_Gul.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-origin: content-box;
@@ -59,7 +59,7 @@ body {
   height: 50%;
 }
 #Conts .nod1 {
-  background-image: url(../Bilde/Banner_House_slange.svg);
+  background-image: url(../Bilde/Icons/Algood_Gul.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-origin: content-box;
