@@ -2,7 +2,7 @@ $GamFont: 'Game of Thrones';
 $fontColr: rgb(212, 175, 55);
 
 body{
-    background-color:  rgba(17, 15, 10, 0.644) !important;
+  background-color:  rgba(17, 15, 10, 0.904) !important;
 }
 
 
@@ -38,7 +38,7 @@ body{
 
 .Container{ 
 
-  background-color: rgba(153, 153, 153, 0.61);
+  background-color: rgba(80, 80, 80, 0.541);
   max-width: 1000px;
   margin: auto;
 
@@ -141,7 +141,7 @@ body{
     bottom: 500;
     min-width: 100%;
     min-height: 100%;
-    opacity: 0.2;
+    opacity: 0.4;
     z-index: -100;
   }
   #myVideo2 {
@@ -150,7 +150,7 @@ body{
     left: 0;
     min-width: 100%;
     min-height: 100%;
-    opacity: 0.2;
+    opacity: 0.5; 
     z-index: -100;
   
   }

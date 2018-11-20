@@ -32,11 +32,12 @@ fetch('https://anapioficeandfire.com/api/houses')
    
     cards.setAttribute("class", "cardElement");
     
-    
+    var masterHEd = document.createElement("h1");
     
     for (let i = 0; i < myJson.length; i++) {
 
  // lager elementene 
+
         var MyDiv = document.createElement("div");
         var MyHEding = document.createElement("h1");
         var Myprag= document.createElement("h5");
@@ -142,7 +143,7 @@ var local1 = localStorage.setItem("player 1", play1.house);
    
       myBar.innerHTML= "<progress class='test' max='100' value='80'></progress>"
       myBar2.innerHTML= "<progress class='test' max='100' value='40'></progress>"
-     
+    
 
     }
   

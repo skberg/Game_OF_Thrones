@@ -1,13 +1,18 @@
 $GamFont: 'Game of Tsrones';
+$introFont: 'Julius Sans One', sans-serif;
 $fontColr: rgb(212, 175, 55);
+$fontColr2: rgba(212, 175, 55, 0.747);
+
 
 @font-face {
   font-family: Game of Tsrones;
   src: url(../../Game.of.thrones.font/GameofThrones.woff);
 }
 
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+
 body{
-  background-color:  rgba(17, 15, 10, 0.644) !important;
+  background-color:  rgba(17, 15, 10, 0.904) !important;
 }
 
 
@@ -42,12 +47,14 @@ body{
 
 
 #Conts {
-  box-shadow: 2px 2px 60px black;
-  background-color: rgba(250, 235, 215, 0.692) ;
-  border-radius: 34px;
-  border: 60px solid transparent;
-  border-image: url(../Bilde/Ramme.svg) 50 round;
-    margin: 15px;
+ 
+
+  background-color: rgba(80, 80, 80, 0.541);
+  padding: 30px;
+  border: 10px solid transparent;
+  border-image: url(../Bilde/ramme2.0.png) 30;
+  max-width: 2000px;
+  margin: 40px;
  
 
         .cardElement{
@@ -55,20 +62,27 @@ body{
           grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
           grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
           grid-gap: 40px;
+      
+         
+          margin: auto;
        
         
         }
 
 
           .cards {
-            background-color:rgb(59, 59, 59);
-            padding: 10px;
+            background-color:rgb(73, 73, 73);
+           
+            
+          
             text-align: center;
             width: 100%;
             height: 560px;
             border-radius: 10px;
             color: white;
-            border: none;
+        
+            box-shadow: 2px 2px 20px -1px black;
+          
          
             // box-shadow: 2px 2px 17px -1px rgba(0,0,0,0.75);
            
@@ -77,9 +91,63 @@ body{
             
         
           }
-          .cards:hover{
-            box-shadow: 2px 2px 17px -1px rgba(0,0,0,0.75);
+          .Intro{
+            font-family: $introFont;
+            font-size: 50px;
+            color: rgba(128, 128, 128, 0.747);
+            text-align: center;
+            padding: 10px;
+            text-decoration: underline $fontColr2;
           }
+
+
+          .players{
+            text-align: center;
+            padding: 30px;
+            .Player1{
+              display: inline;
+              text-align: center;
+              font-size: 30px;
+              padding: 20px;
+              text-decoration: underline blue;
+              text-transform: uppercase;
+              font-family: $GamFont;
+              color:rgba(128, 128, 128, 0.747);
+            }
+            .Player2{
+              display: inline;
+              text-align: center;
+              font-size: 30px;
+              padding: 20px;
+              text-decoration: underline green;
+              text-transform: uppercase;
+              font-family: $GamFont;
+              color:rgba(128, 128, 128, 0.747);
+            }
+            input{
+              background-color: transparent;
+              border: transparent;
+              padding-right: 10px;
+
+            }
+           
+  
+          }
+          
+
+
+
+
+          .Intro{
+            font-family: $introFont;
+            font-size: 50px;
+            color: rgba(128, 128, 128, 0.747);
+            text-align: center;
+            padding: 10px;
+          }
+
+
+
 
           // House Algood
 
@@ -89,44 +157,43 @@ body{
             background-position: center;
             background-origin: content-box;
             
-          
+            -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(50%);
           
             width: 100%;
             height: 50%;
          
-           
-          
-            
-         
           }
            // House Allyrion of godsgrace
           .nod1{
-           background-image: url(../Bilde/Icons/Algood_Gul.svg);
+           background-image: url(../Bilde/Icons/Hand_Dark_Red.svg);
            background-repeat: no-repeat;
            background-position: center;
            background-origin: content-box;
            
-         
+           -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+           filter: grayscale(50%);
         
            width: 100%;
            height: 50%;
-        
-          
-         
-           
-        
          }
          .list{
-           
-          
            text-align: left;
+           margin: 10px;
            font-size:0.8rem;
+        
 
          }
+
+         .myBar{
+          min-height: 150px;
+         }
          h5{
+           padding:10px;
            font-family: $GamFont;
            color: $fontColr;
-           min-height: 50px;
+           min-height: 85px;
+           line-height: 35px;
          }
          // House AMber
          .nod2{
@@ -134,7 +201,8 @@ body{
           background-repeat: no-repeat;
           background-position: center;
           background-origin: content-box;
-      
+          -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(50%);
         
           width: 100%;
           height: 50%;
@@ -145,18 +213,20 @@ body{
           background-repeat: no-repeat;
           background-position: center;
           background-origin: content-box;
-      
+          -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(50%);
       
           width: 100%;
           height: 50%;
          }
           // House Appleton of appleton
          .nod4{
-          background-image: url(../Bilde/Banner_Whater.svg);
+          background-image: url(../Bilde/Icons/Wood_Kind_Gray.svg);
           background-repeat: no-repeat;
           background-position: center;
           background-origin: content-box;
-      
+          -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(50%);
         
           width: 100%;
           height: 50%;
@@ -168,7 +238,8 @@ body{
           background-position: center;
           background-origin: content-box;
       
-         
+          -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(50%);
           width: 100%;
           height: 50%;
          }
@@ -178,7 +249,8 @@ body{
           background-repeat: no-repeat;
           background-position: center;
           background-origin: content-box;
-      
+          -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(50%);
         
           width: 100%;
           height: 50%;
@@ -189,7 +261,8 @@ body{
           background-repeat: no-repeat;
           background-position: center;
           background-origin: content-box;
-      
+          -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(50%);
           
           width: 100%;
           height: 50%;
@@ -201,31 +274,25 @@ body{
           background-repeat: no-repeat;
           background-position: center;
           background-origin: content-box;
-      
+          -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(50%);
         
           width: 100%;
           height: 50%;
          }
          .nod9{
-          background-image: url(../Bilde/Banner_Whater.svg);
+          background-image: url(../Bilde/Icons/Man_GReen_Fame.svg);
           background-repeat: no-repeat;
           background-position: center;
           background-origin: content-box;
-      
+          
+          -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(50%);
           
           width: 100%;
           height: 50%;
          }      
-         .nod10{
-          background-image: url(../Bilde/Banner_Whater.svg);
-          background-repeat: no-repeat;
-          background-position: center;
-          background-origin: content-box;
-      
          
-          width: 100%;
-          height: 50%;
-         }
          
 
 
@@ -249,7 +316,7 @@ body{
   bottom: 500;
   min-width: 100%;
   min-height: 100%;
-  opacity: 0.2;
+  opacity: 0.4;
   z-index: -100;
 }
 #myVideo2 {
@@ -259,7 +326,7 @@ body{
   top: 500;
   min-width: 100%;
   min-height: 100%;
-  opacity: 0.2; 
+  opacity: 0.5; 
   z-index: -100;
   
 }
