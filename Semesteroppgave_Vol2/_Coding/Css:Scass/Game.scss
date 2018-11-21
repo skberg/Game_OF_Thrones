@@ -1,8 +1,11 @@
 $GamFont: 'Game of Thrones';
 $fontColr: rgb(212, 175, 55);
+$introFont: 'Julius Sans One',
+sans-serif;
+$fontColr2: rgba(212, 175, 55, 0.747);
 
-body{
-  background-color:  rgba(17, 15, 10, 0.904) !important;
+body {
+  background-color: rgba(17, 15, 10, 0.904) !important;
 }
 
 
@@ -10,25 +13,25 @@ body{
 
 
 
-.logo {
+.Master_heding {
   font-family: $GamFont;
   text-align: center;
   padding: 30px;
 
-      .heding {
-        font-family: $GamFont;
-        text-align: center;
-        color: $fontColr;
-        font-size: 50px;
-   
+  .heding {
+    font-family: $GamFont;
+    text-align: center;
+    color: $fontColr;
+    font-size: 50px;
 
-        text-decoration: underline;
-      }
 
-      .under_heding {
-        color: $fontColr;
-        font-size: 20px;
-      }
+    text-decoration: underline;
+  }
+
+  .under_heding {
+    color: $fontColr;
+    font-size: 20px;
+  }
 
 }
 
@@ -36,7 +39,7 @@ body{
 
 
 
-.Container{ 
+.Container {
 
   background-color: rgba(80, 80, 80, 0.541);
   max-width: 1000px;
@@ -49,42 +52,45 @@ body{
   grid-template: repeat(16, 1fr) / repeat(4, 1fr);
   grid-gap: 2px;
 
- 
-.cardElement{
 
-  background-color:#ffff;
-  padding: 50px;
-  height: 100%;
-  font-family: $GamFont;
-  text-align: center;
-  font-size: 10px;
-  color: $fontColr
+  .cardElement {
 
+    background-color: #ffff;
+    padding: 50px;
+    height: 100%;
+    font-family: $GamFont;
+    text-align: center;
+    font-size: 10px;
+    color: $fontColr;
 
+  }
 
+  .cardElementWall {
+    background-color: lightblue;
+    padding: 50px;
+    height: 100%;
+    font-family: $GamFont;
+    text-align: center;
+    font-size: 10px;
+    color: $fontColr;
+  }
+
+  .cardElement_Not {
+    background-color: black;
+    padding: 50px;
+    height: 100%;
+    font-family: $GamFont;
+    text-align: center;
+    font-size: 10px;
+    color: $fontColr;
+
+  }
+
+  h1 {
+    padding-top: 45px;
+  }
 
 }
-    .cardElementWall{
-      background-color:lightblue;
-      padding: 50px;
-      height: 100%;
-      font-family: $GamFont;
-      text-align: center;
-      font-size: 10px;
-      color: $fontColr
-    }
-    .cardElement_Not{
-      
-      background-color:black;
-      padding: 50px;
-      height: 100%;
-      font-family: $GamFont;
-      text-align: center;
-      font-size: 10px;
-      color: $fontColr
-    }
-
-}
 
 
 
@@ -98,36 +104,37 @@ body{
 
 
 
-.disk{ 
+.disk {
   align-content: center;
   justify-content: center;
   text-align: center;
   float: center;
-  background-color: aqua;
   margin: 50px;
 
 
 
 
 
-  .dice{
 
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    width: 30px;
-    display: inline;
-    padding: 10px;
-    background:#F5F5F5;
+  .dice {
+
+    float: center;
+    width: 55px;
+    margin: auto;
+    background: $fontColr;
     border-radius: 10px;
-  
-    font-size:24px;
- 
-    
-  
-  }
-  
+    font-size: 24px;
 
+
+
+  }
+
+  .button_Disk {
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px;
+  }
 
 
 
@@ -135,23 +142,23 @@ body{
 
 
 #myVideo {
-   position: fixed;
-    right: 0;
-    left: 0;
-    bottom: 500;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0.4;
-    z-index: -100;
-  }
-  #myVideo2 {
-    position: fixed;
-    right: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0.5; 
-    z-index: -100;
-  
-  }
- 
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 500;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.4;
+  z-index: -100;
+}
+
+#myVideo2 {
+  position: fixed;
+  right: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.5;
+  z-index: -100;
+
+}

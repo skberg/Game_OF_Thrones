@@ -10,7 +10,6 @@ body {
 .logo {
   font-family: "Game of Tsrones";
   text-align: center;
-  padding: 30px;
 }
 .logo .heding {
   font-family: "Game of Tsrones";
@@ -19,7 +18,8 @@ body {
   font-size: 50px;
   text-decoration: underline;
 }
-.logo .under_heding {
+.logo .under_log_texst {
+  padding: 20px;
   color: #d4af37;
   font-size: 20px;
 }
@@ -64,18 +64,18 @@ body {
   display: inline;
   text-align: center;
   font-size: 30px;
-  padding: 20px;
-  text-decoration: underline blue;
+  background-color: aquamarine;
+  text-decoration: underline #375DAA;
   text-transform: uppercase;
   font-family: "Game of Tsrones";
   color: rgba(128, 128, 128, 0.747);
 }
 #Conts .players .Player2 {
+  background-color: aqua;
   display: inline;
   text-align: center;
   font-size: 30px;
-  padding: 20px;
-  text-decoration: underline green;
+  text-decoration: underline #57883D;
   text-transform: uppercase;
   font-family: "Game of Tsrones";
   color: rgba(128, 128, 128, 0.747);
@@ -83,7 +83,28 @@ body {
 #Conts .players input {
   background-color: transparent;
   border: transparent;
-  padding-right: 10px;
+}
+#Conts .players .Button_Go {
+  border: none;
+  float: right;
+  border-radius: 20px;
+  width: 70px;
+  padding: 5px;
+  max-width: 70px;
+  text-decoration: none;
+  background-color: #375DAA;
+  color: #ffff;
+}
+#Conts .players .Button_Go:hover {
+  border: none;
+  float: right;
+  border-radius: 20px;
+  width: 70px;
+  padding: 5px;
+  max-width: 70px;
+  background-color: #d4af37;
+  text-decoration: none;
+  color: black;
 }
 #Conts .Intro {
   font-family: "Julius Sans One", sans-serif;
@@ -120,14 +141,14 @@ body {
   font-size: 0.8rem;
 }
 #Conts .myBar {
-  min-height: 150px;
+  min-height: 10px;
 }
 #Conts h5 {
   padding: 10px;
   font-family: "Game of Tsrones";
   color: #d4af37;
-  min-height: 85px;
-  line-height: 35px;
+  min-height: 75px;
+  line-height: 30px;
 }
 #Conts .nod2 {
   background-image: url(../Bilde/Banner_Whater.svg);
