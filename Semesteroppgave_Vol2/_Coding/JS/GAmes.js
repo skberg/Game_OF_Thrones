@@ -218,3 +218,35 @@ function rollDice() {
     var d1 = Math.floor(Math.random() * 6) + 1;
     die1.innerHTML = d1;
 }
+
+
+//hjelp!!!!
+
+function move_img(player2) {
+    var step=50; // change this to different step value
+    switch(player2){
+    case "down":
+    var x=document.getElementById('player 2').offsetTop;
+    x= x + step;
+    document.getElementById('player 2').style.top= x + "px";
+    break;
+    
+    case "up":
+    var x=document.getElementById('player 2').offsetTop;
+    x= x -step;
+    document.getElementById('player 2').style.top= x + "px";
+    break;
+    
+    case "left":
+    var y=document.getElementById('player 2').offsetLeft;
+    y= y - step;
+    document.getElementById('player 2').style.left= y + "px";
+    break;
+    
+    case "right":
+    var y=document.getElementById('player 2').offsetLeft;
+    y= y + step;
+    document.getElementById('player 2').style.left= y + "px";
+    break;
+    }
+    }

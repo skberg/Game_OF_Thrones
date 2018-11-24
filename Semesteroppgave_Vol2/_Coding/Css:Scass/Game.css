@@ -7,12 +7,8 @@ body {
   text-align: center;
   padding: 30px;
 }
-.Master_heding .heding {
-  font-family: "Game of Thrones";
-  text-align: center;
-  color: #d4af37;
-  font-size: 50px;
-  text-decoration: underline;
+.Master_heding .logo_img {
+  margin: auto;
 }
 .Master_heding .under_heding {
   color: #d4af37;
@@ -54,8 +50,30 @@ body {
   font-size: 10px;
   color: #d4af37;
 }
+.Container .cardElement_Not .cardElement_Not_IMg {
+  background-repeat: repeat;
+  float: right;
+}
 .Container h1 {
   padding-top: 45px;
+}
+
+.cardElement_Not_blue {
+  border-right: 5px solid blue;
+  background-color: black;
+  height: 100%;
+  font-family: "Game of Thrones";
+  font-size: 10px;
+  color: #d4af37;
+}
+
+.cardElement_Not_blue_bottom {
+  border-bottom: 5px solid blue;
+  background-color: rgba(95, 123, 160, 0.932);
+  height: 100%;
+  font-family: "Game of Thrones";
+  font-size: 10px;
+  color: #d4af37;
 }
 
 .disk {

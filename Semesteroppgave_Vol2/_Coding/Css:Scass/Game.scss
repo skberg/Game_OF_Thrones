@@ -18,15 +18,16 @@ body {
   text-align: center;
   padding: 30px;
 
-  .heding {
-    font-family: $GamFont;
-    text-align: center;
-    color: $fontColr;
-    font-size: 50px;
+  .logo_img  {
+    margin:auto;
 
 
-    text-decoration: underline;
+
+
   }
+
+
+ 
 
   .under_heding {
     color: $fontColr;
@@ -84,6 +85,14 @@ body {
     font-size: 10px;
     color: $fontColr;
 
+  
+
+
+      .cardElement_Not_IMg{
+       
+        background-repeat: repeat;
+        float: right;
+      }
   }
 
   h1 {
@@ -93,6 +102,28 @@ body {
 }
 
 
+
+.cardElement_Not_blue{
+  border-right: 5px solid blue;
+  background-color: black;
+
+
+  height: 100%;
+  font-family: $GamFont;
+
+  font-size: 10px;
+  color: $fontColr;
+}
+.cardElement_Not_blue_bottom{
+  border-bottom: 5px solid blue;
+  background-color: rgba(95, 123, 160, 0.932);
+
+  height: 100%;
+  font-family: $GamFont;
+
+  font-size: 10px;
+  color: $fontColr;
+}
 
 
 
