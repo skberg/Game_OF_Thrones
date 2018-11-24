@@ -10,37 +10,41 @@ body {
 .logo {
   font-family: "Game of Tsrones";
   text-align: center;
+  padding: 20px;
 }
-.logo .heding {
-  font-family: "Game of Tsrones";
-  text-align: center;
-  color: #d4af37;
-  font-size: 50px;
-  text-decoration: underline;
+.logo .logo_img {
+  margin: 20px;
 }
 .logo .under_log_texst {
-  padding: 20px;
+  padding: 40px;
   color: #d4af37;
-  font-size: 20px;
+  font-size: 100px;
 }
 
-#Conts {
+.center_Contst {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+.center_Contst #Conts {
   background-color: rgba(80, 80, 80, 0.541);
-  padding: 30px;
+  margin: 40px;
   border: 10px solid transparent;
   border-image: url(../Bilde/ramme2.0.png) 30;
   max-width: 2000px;
-  margin: 40px;
+  justify-items: space-evenly;
+  align-content: center;
 }
-#Conts .cardElement {
+.center_Contst #Conts .cardElement {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 40px;
-  margin: auto;
+  align-content: center;
+  margin: 20px;
 }
-#Conts .cards {
+.center_Contst #Conts .cards {
   background-color: #494949;
+  align-content: center;
   text-align: center;
   width: 100%;
   height: 560px;
@@ -48,7 +52,7 @@ body {
   color: white;
   box-shadow: 2px 2px 20px -1px black;
 }
-#Conts .Intro {
+.center_Contst #Conts .Intro {
   font-family: "Julius Sans One", sans-serif;
   font-size: 50px;
   color: rgba(128, 128, 128, 0.747);
@@ -56,22 +60,20 @@ body {
   padding: 10px;
   text-decoration: underline rgba(212, 175, 55, 0.747);
 }
-#Conts .players {
+.center_Contst #Conts .players {
   text-align: center;
   padding: 30px;
 }
-#Conts .players .Player1 {
+.center_Contst #Conts .players .Player1 {
   display: inline;
   text-align: center;
   font-size: 30px;
-  background-color: aquamarine;
   text-decoration: underline #375DAA;
   text-transform: uppercase;
   font-family: "Game of Tsrones";
   color: rgba(128, 128, 128, 0.747);
 }
-#Conts .players .Player2 {
-  background-color: aqua;
+.center_Contst #Conts .players .Player2 {
   display: inline;
   text-align: center;
   font-size: 30px;
@@ -80,11 +82,11 @@ body {
   font-family: "Game of Tsrones";
   color: rgba(128, 128, 128, 0.747);
 }
-#Conts .players input {
+.center_Contst #Conts .players input {
   background-color: transparent;
   border: transparent;
 }
-#Conts .players .Button_Go {
+.center_Contst #Conts .players .Button_Go {
   border: none;
   float: right;
   border-radius: 20px;
@@ -95,7 +97,7 @@ body {
   background-color: #375DAA;
   color: #ffff;
 }
-#Conts .players .Button_Go:hover {
+.center_Contst #Conts .players .Button_Go:hover {
   border: none;
   float: right;
   border-radius: 20px;
@@ -106,14 +108,14 @@ body {
   text-decoration: none;
   color: black;
 }
-#Conts .Intro {
+.center_Contst .Intro {
   font-family: "Julius Sans One", sans-serif;
   font-size: 50px;
   color: rgba(128, 128, 128, 0.747);
   text-align: center;
   padding: 10px;
 }
-#Conts .nod0 {
+.center_Contst .nod0 {
   background-image: url(../Bilde/Icons/Algood_Gul.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -124,7 +126,7 @@ body {
   width: 100%;
   height: 50%;
 }
-#Conts .nod1 {
+.center_Contst .nod1 {
   background-image: url(../Bilde/Icons/Hand_Dark_Red.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -135,22 +137,22 @@ body {
   width: 100%;
   height: 50%;
 }
-#Conts .list {
+.center_Contst .list {
   text-align: left;
   margin: 10px;
   font-size: 0.8rem;
 }
-#Conts .myBar {
+.center_Contst .myBar {
   min-height: 10px;
 }
-#Conts h5 {
+.center_Contst h5 {
   padding: 10px;
   font-family: "Game of Tsrones";
   color: #d4af37;
   min-height: 75px;
   line-height: 30px;
 }
-#Conts .nod2 {
+.center_Contst .nod2 {
   background-image: url(../Bilde/Banner_Whater.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -161,7 +163,7 @@ body {
   width: 100%;
   height: 50%;
 }
-#Conts .nod3 {
+.center_Contst .nod3 {
   background-image: url(../Bilde/Icons/Red_Mauer.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -172,7 +174,7 @@ body {
   width: 100%;
   height: 50%;
 }
-#Conts .nod4 {
+.center_Contst .nod4 {
   background-image: url(../Bilde/Icons/Wood_Kind_Gray.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -183,7 +185,7 @@ body {
   width: 100%;
   height: 50%;
 }
-#Conts .nod5 {
+.center_Contst .nod5 {
   background-image: url(../Bilde/Icons/Blue_Hero.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -194,7 +196,7 @@ body {
   width: 100%;
   height: 50%;
 }
-#Conts .nod6 {
+.center_Contst .nod6 {
   background-image: url(../Bilde/Icons/Blue_Hero.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -205,7 +207,7 @@ body {
   width: 100%;
   height: 50%;
 }
-#Conts .nod7 {
+.center_Contst .nod7 {
   background-image: url(../Bilde/Icons/Orang_son.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -216,7 +218,7 @@ body {
   width: 100%;
   height: 50%;
 }
-#Conts .nod8 {
+.center_Contst .nod8 {
   background-image: url(../Bilde/Icons/Red_Skog.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -227,7 +229,7 @@ body {
   width: 100%;
   height: 50%;
 }
-#Conts .nod9 {
+.center_Contst .nod9 {
   background-image: url(../Bilde/Icons/Man_GReen_Fame.svg);
   background-repeat: no-repeat;
   background-position: center;

@@ -23,11 +23,8 @@ body {
   background-color: rgba(80, 80, 80, 0.541);
   max-width: 1000px;
   margin: auto;
-  border-radius: 50px;
-  border: 50px solid transparent;
-  border-image: url(../Bilde/Ramme.svg) 30 round;
   display: grid;
-  grid-template: repeat(16, 1fr)/repeat(4, 1fr);
+  grid-template: repeat(8, 1fr)/repeat(4, 1fr);
   grid-gap: 2px;
 }
 .Container .cardElement {
@@ -67,6 +64,22 @@ body {
   text-align: center;
   float: center;
   margin: 50px;
+  position: fixed;
+  top: 2%;
+  right: 2%;
+}
+.disk .Disk_Img_1 {
+  background-color: #375DAA;
+  padding: 5px;
+  margin: 5px;
+}
+.disk .Disk_Img_1 .Disk_Img_text {
+  background-color: aqua;
+}
+.disk .Disk_Img_2 {
+  background-color: #57883D;
+  padding: 5px;
+  margin: 5px;
 }
 .disk .dice {
   float: center;
