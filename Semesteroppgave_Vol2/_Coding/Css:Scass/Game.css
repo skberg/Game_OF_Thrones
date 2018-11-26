@@ -88,30 +88,96 @@ body {
 }
 .disk .Disk_Img_1 {
   background-color: #375DAA;
-  padding: 5px;
-  margin: 5px;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 15px;
 }
 .disk .Disk_Img_1 .Disk_Img_text {
   background-color: aqua;
-}
-.disk .Disk_Img_2 {
-  background-color: #57883D;
-  padding: 5px;
-  margin: 5px;
+  color: #ffff;
+  padding: 50px;
 }
 .disk .dice {
   float: center;
   width: 55px;
   margin: auto;
-  background: #d4af37;
+  background: #375DAA;
   border-radius: 10px;
   font-size: 24px;
+}
+.disk .dice .text {
+  background-color: aqua;
+  color: #ffff;
+  padding: 50px;
 }
 .disk .button_Disk {
   border: none;
   padding: 10px;
   border-radius: 25px;
   margin: 10px;
+}
+.disk .Disk_Img_text {
+  background-color: aqua;
+  color: #ffff;
+  padding: 50px;
+}
+
+.text {
+  float: center;
+  background-color: #375DAA;
+  padding: 5px;
+  margin: 10px auto;
+  width: 80px;
+  border-radius: 15px;
+  color: #ffff;
+}
+
+.disk_venster {
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  float: center;
+  margin: 50px;
+  position: fixed;
+  top: 3%;
+  left: 2%;
+}
+.disk_venster .dice_venstere {
+  float: center;
+  width: 55px;
+  margin: auto;
+  background: #57883D;
+  border-radius: 10px;
+  font-size: 24px;
+}
+.disk_venster .button_Disk_venstere {
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 10px;
+}
+.disk_venster .Disk_Img_2 {
+  border-radius: 10px;
+  padding: 14px;
+  margin: 15px;
+  background-color: #57883D;
+}
+.disk_venster .text_v {
+  float: center;
+  background-color: #57883D;
+  padding: 5px;
+  margin: 10px auto;
+  width: 80px;
+  border-radius: 15px;
+  color: #ffff;
+}
+
+.inp {
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  outline: none;
 }
 
 #myVideo {
