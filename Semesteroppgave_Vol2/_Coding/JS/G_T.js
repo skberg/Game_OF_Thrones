@@ -23,6 +23,15 @@ var play2 = {
 
 }
 
+                            ////Rensker localhost and making the user changs player 
+
+function mybuttonClear(){
+    localStorage.clear(); 
+    location.reload();
+    document.getElementById(play1.house).style.border = "none";
+    document.getElementById(play2.house).style.border = "none";
+}
+    
 function CardElm(myJson) {
 
 
@@ -84,6 +93,10 @@ function CardElm(myJson) {
 
 
 
+
+
+
+
         // mylist.setAttribute('id', myJson[i].gender + i);
 
         MyDiv.addEventListener("click", function () {
@@ -107,6 +120,8 @@ function CardElm(myJson) {
 
         localStorage.getItem("player 1");
 
+
+       console.log(play1);
 
 
 
@@ -146,7 +161,8 @@ function CardElm(myJson) {
         Mylistitem_Codeofarms.innerHTML = myJson[i].coatOfArms;
         Mylistitem_Words.innerHTML = myJson[i].words;
 
-        myBar.innerHTML = "<progress class='test' max='100' value='80'></progress>"
+        myBar.innerHTML = "<progress class='test[i]' max='100' value='80'></progress>"
+       
         myBar2.innerHTML = "<progress class='test' max='100' value='40'></progress>"
 
 
@@ -157,17 +173,4 @@ function CardElm(myJson) {
 
 }
 
-function move() {
-    var elem = document.getElementById("myBar");
-    var width = 1;
-    var id = setInterval(frame, 10);
 
-    function frame() {
-        if (width >= 100) {
-            clearInterval(id);
-        } else {
-            width++;
-            elem.style.width = width + '%';
-        }
-    }
-}

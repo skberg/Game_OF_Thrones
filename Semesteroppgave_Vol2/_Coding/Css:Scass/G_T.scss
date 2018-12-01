@@ -21,25 +21,31 @@ body {
 
 
 .logo {
-  font-family: $GamFont;
+
   text-align: center;
   padding: 20px;
-
+  -webkit-filter: grayscale(50%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(5%);
 
   .logo_img  {
     margin: 20px;
 
-
-
+  
 
   }
 
-  .under_log_texst {
-    padding: 40px;
-    color: $fontColr;
-    font-size: 100px;
-  }
 
+}
+
+
+
+
+.hr_syl{
+  border: 0;
+height: 1px;
+width: 50%;
+background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(212, 175, 52, 0.75), rgba(0, 0, 0, 0));
 }
 
 
@@ -107,14 +113,35 @@ body {
     color: rgba(128, 128, 128, 0.747);
     text-align: center;
     padding: 10px;
-    text-decoration: underline $fontColr2;
+   
   }
 
 
   .players {
     text-align: center;
     padding: 30px;
-
+    
+    .undo_player{
+      display: inline;
+      float: left;
+      background-color: #375DAA;
+      color: #ffff;
+      border-radius: 20px;
+      width: 100px;
+      padding: 5px;
+      max-width: 100px;
+    }
+    .undo_player:hover{
+      display: inline;
+      float: left;
+      background-color: $fontColr;
+      color: #000;
+      border-radius: 20px;
+      width: 100px;
+      padding: 5px;
+      max-width: 100px;
+    }
+      
 
     .Player1 {
       display: inline;
@@ -143,19 +170,19 @@ body {
     input {
       background-color: transparent;
       border: transparent;
-
-
+      
     }
 
+    
     .Button_Go {
 
       border: none;
       float: right;
       border-radius: 20px;
-      width: 70px;
+      width: 100px;
       padding: 5px;
 
-      max-width: 70px;
+      max-width: 100px;
       text-decoration: none;
       background-color: #375DAA;
       color: #ffff;
@@ -165,9 +192,9 @@ body {
       border: none;
       float: right;
       border-radius: 20px;
-      width: 70px;
+      width: 100px;
       padding: 5px;
-      max-width: 70px;
+      max-width: 100px;
       background-color: $fontColr;
       text-decoration: none;
       color: black;
@@ -234,6 +261,9 @@ body {
   .myBar {
     min-height: 10px;
   }
+
+
+
 
   h5 {
     padding: 10px;

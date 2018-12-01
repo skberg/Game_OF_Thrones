@@ -1,7 +1,5 @@
 $GamFont: 'Game of Tsrones';
-$introFont: 'Julius Sans One',
-sans-serif;
-
+$introFont: 'Julius Sans One',sans-serif;
 $fontColr: rgb(212, 175, 55);
 $fontColr2: rgba(212, 175, 55, 0.747);
 
@@ -18,28 +16,75 @@ body {
     background-color: rgba(17, 15, 10, 0.904) !important;
 }
 
+.logo {
+  text-align: center;
+  padding: 20px;
+    -webkit-filter: grayscale(50%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+    
+  
+    .logo_img  {
+        margin: 20px;
+    
+  
+    }
+  
+    .under_log_texst{
+        text-align: center;
+        color: #fff;
+        font-family: $GamFont;
+    } 
+  }
+
+
+  
+
 .head-ing{
     text-align: center;
+    font-size: 1rem;
+    
     .elements{
-        background-color: aliceblue;
+        background-color: gold;
+        font-size: 1rem;
     }
+    
 }
+.Rap_mov{                                                       //the hidden img.
+    width: 150px;
+    border-radius: 10px 10px 0px 0px;
+     background-color:transparent;
+     margin: 30px auto;
+     position: absolute; 
+    bottom: 0;
+    height: 140%;
+     left: 20%;
+     right: 34%;
+     z-index: -100;
+   
+     
+    -webkit-animation-name: upCale; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
   
-.moving{
+    .items {                                                    //item is the img for localShorets. the winner              
+        text-align: center;   
+    }
+
+}
+.moving{                                                        ///the main column whit nr 1
     width: 250px;
    border-radius: 10px 10px 0px 0px;
     background-color: white;
     margin: 0px auto;
     position: absolute; 
     bottom: 0;
-    left: 34%;
-   
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     
+    left: 34%;
+    right: 34%;
 
-
-
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    
     .moving_Symbol{
         text-align: center;
         padding-top: 40px; 
@@ -48,17 +93,64 @@ body {
 
 }
 
-@-webkit-keyframes example {
-    0% { height: 50px; }
-    75% { height: 450px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes example  {                           //anmiasjon for the whit column 
+    0% { height: 90px; }
+  
     100%{ height: 450px;}
 }
 
-@keyframes example {
-    0% { height: 50px; }
-    75% { height: 450px; }
+@keyframes example {                                      //anmiasjon for the whit column 
+    0% { height: 90px; }
+   
     100%{ height: 450px;}
   
+}
+
+
+
+
+
+
+                                                        //animasjon for the hidden column
+@-webkit-keyframes upCale{
+    0% { height: 60px; }
+   
+    100%{ height: 550px;}
+}
+                                                        //animasjon for the hidden column
+@keyframes upCale {
+    0% { height: 60px; }
+  
+    100%{ height: 550px;}
+  
+}
+
+
+
+
+
+                                                    //making it stay central after screen under 600 px
+@media only screen and (max-width: 600px) {
+    .moving{
+        left: 14%;
+        right: 14%;
+        bottom: 0;
+    }
 }
 
 

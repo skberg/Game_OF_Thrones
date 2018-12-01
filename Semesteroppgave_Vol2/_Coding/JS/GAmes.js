@@ -1,4 +1,3 @@
-
                                                             //plaserer på start 
 switch (localStorage.getItem("player 1")) {
     case "House Algood":
@@ -48,7 +47,9 @@ switch (localStorage.getItem("player 1")) {
 
 }
 
-                                                            //plaserer på venstere under dice1
+  
+
+//plaserer på venstere under dice1
 switch (localStorage.getItem("player 1")) {
     case "House Algood":
         var el = document.getElementById("player_1");
@@ -146,6 +147,8 @@ case "House Baelish of Harrenhal":
         console.log("work, no info")
 }
 
+
+
                                                             //plaserer på starts linje 
 switch (localStorage.getItem("player 2")) {
     case "House Algood":
@@ -217,7 +220,7 @@ function rollDice() {                                          //dice player 1
     var die1 = document.getElementById("die1");
     var d1 = Math.floor(Math.random() * 6) + 1;
     die1.innerHTML = d1;
-    bevegdegforfaen(d1);
+    moving_blue(d1);
 }
 
 
@@ -226,105 +229,85 @@ function rollDice_2() {                                     //dice player 2
     var die2 = document.getElementById("die2");
     var d2 = Math.floor(Math.random() * 6) + 1;
     die2.innerHTML = d2;
-    bevegdegforfaen(d2);
+    moving_green(d2);
 }
 
 
 
 ////Hjelp!!!!!!!11
 
-function bevegdegforfaen(d1,d2){
-  
+function moving_blue(d1){
+
     var spillertur = 1;
+
     var player1 = document.getElementById("player1");
-    var player2 = document.getElementById("player2");
+  
+
     if( spillertur == 1 ){
         spillertur = 2;
     } else {
         spillertur = 2;
     }
     var brikke = document.getElementById(start);
-    var brikke2 = document.getElementById(begin);
+
     
     brikke.style.backgroundColor ="white";                  //Card Standar farge 
-    
+
     for(i = 0; i < d1; i++){
         start = start + 1;
-        begin = begin + 1;
+     
         brikke = document.getElementById(start);
-        brikke2 = document.getElementById(begin);
-        brikke2.appendChild(player2)
+       
+       
         brikke.appendChild(player1);
    
     }
-
     brikke.style.backgroundColor = "#375DAA";               //independet color after players 
 }
 
 
-//hjelp!!!!
-/*
-function move_img(player2) {
-    var step=50; // change this to different step value
-    
-    switch(player2){
 
-    case "down":
-    var x=document.getElementById('player2').offsetTop;
-    x= x + step;
-    document.getElementById('player2').style.top= x + "id";
-    break;
-    
-    case "up":
-    var x=document.getElementById('player2').offsetTop;
-    x= x -step;
-    document.getElementById('player2').style.top= x + "id";
-    break;
-    
-    case "left":
-    var y=document.getElementById('player2').offsetLeft;
-    y= y - step;
-    document.getElementById('player2').style.left= y + "id";
-    break;
-    
-    case "right":
-    var y=document.getElementById('player2').offsetLeft;
-    y= y + step;
-    document.getElementById('player2').style.left= y + "id";
-    break;
 
+
+function moving_green(d2){
+
+    var spillertur = 2;
+
+    
+     var player2 = document.getElementById("player2");
+
+    if( spillertur == 2 ){
+        spillertur = 2;
+    } else {
+        spillertur = 2;
+    }
+    var brikke = document.getElementById(start);
+
+    
+    brikke.style.backgroundColor ="white";                  //Card Standar farge 
+
+    for(i = 0; i < d2; i++){
+        start = start + 1;
+     
+        brikke = document.getElementById(start);
+       
+       
+        brikke.appendChild(player2);
+   
     }
 
 
+  
 
-    }
+    brikke.style.backgroundColor = "#57883D";               //independet color after players 
+}
 
-    var game_board = [
-        //kolonne 0, 1, 2, 3
-        ["End",50,'#'],                       // 0 rad
-        [48,47,'#',45],                    // 1
-        [44,'#',42,41],                     // 2
-        [40,39,38,37],                     // 3
-        [36,'#','#',33],                     // 4
-        [32,'#',30,'#'],                     // 5
-        [28,27,26,25],                     // 6
-        ['#','#',22,21],                     // 7
-        [20,19,18, '#'],                   // 8
-    ]
-game_board[player_pos[2],player_pos[20]]
 
-// player_pos[rad, kolonne]
-var player_pos = [8,2]  
-function game_board(){
-
-};
-*/
+var adi = document.getElementById("myadio");                //The audio volium controll 
+adi.volume = 0.1;
+ 
 
 
 
-//spørsmål for mogrgen dagen 
 
-//1 hvordan plasere data hvor jeg vil med hjelp av arrayen vi lagde i går 
-// implumentere bevegelse med W,A,S,D & arow up and down and horisontalt 
-// så dice 2 til å BARE flytte player 2 
-// sentrere logo. 
+ 

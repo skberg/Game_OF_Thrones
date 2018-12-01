@@ -27,7 +27,8 @@
 
     <div class="[ logo ]">
             <!--<h1 class="[ heding ]">GAME OF THRONSE </h1>-->
-     <img class="[ logo_img ]" src="../_Coding/Bilde/LOGO_GRay_UNdertex.svg" width="200px">
+    <!-- <img class="[ logo_img ]" src="../_Coding/Bilde/Icons/Hed_icons/icon2.3.svg" width="400px">-->
+     <img class="[ logo_img ]" src="../_Coding/Bilde/Icons/Hed_icons/artbor2.2.svg" width="400px">
         <!--<p class=" [ under_log_texst ] ">THE CARD GAME</p>--->
 
 
@@ -38,15 +39,21 @@
 
 <div id="Conts">
         <h1 class="[ Intro ]">CHOOSE YOUR HOUSE!</h1>
-        <div class="[ players ]">
-            <div class="[ Player1 ]"><input type="color" value="#375DAA">player 1</div>
-            <div class="[ Player2 ]"><input type="color" value="#57883D">player 2</div>
-            <a href="Game.html#bottom" class="[ Button_Go ]">hey <i class="fas fa-angle-double-right"></i></a>
-        </div>
+        <hr class="[ hr_syl ]">
 
+
+<button onclick="mybuttonClear()"></button>
+
+        <div class="[ players ]">
+            <button class="[ undo_player ]" onclick="mybuttonClear()"><a href="#"></a><i class="fas fa-undo"></i></button>
+            <div class="[ Player1 ]"><input type="color" disabled value="#375DAA">player 1</div>
+            <div class="[ Player2 ]"><input type="color" disabled value="#57883D">player 2</div>
+            <a href="Game.html#bottom" class="[ Button_Go ]">Continue <i class="fas fa-angle-double-right"></i></a>
+        </div>
+       
     </div>
 </div>
-
+<div id="middel"></div>
     <!-- Boostrap_&_JQery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

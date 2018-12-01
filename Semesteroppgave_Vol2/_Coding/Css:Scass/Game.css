@@ -1,18 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
+@font-face {
+  font-family: Game of Tsrones;
+  src: url(../../Game.of.thrones.font/GameofThrones.woff);
+}
 body {
   background-color: rgba(17, 15, 10, 0.904) !important;
 }
 
-.Master_heding {
-  font-family: "Game of Thrones";
+audio {
+  display: block;
+}
+
+.logo {
   text-align: center;
-  padding: 30px;
+  padding: 20px;
+  -webkit-filter: grayscale(50%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(50%);
 }
-.Master_heding .logo_img {
-  margin: auto;
+.logo .logo_img {
+  margin: 20px;
 }
-.Master_heding .under_heding {
-  color: #d4af37;
-  font-size: 20px;
+.logo .under_log_texst {
+  text-align: center;
+  color: #fff;
+  font-family: "Game of Thrones";
+}
+.logo .hr_syl {
+  border: 0;
+  height: 1px;
+  width: 50%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(212, 175, 52, 0.75), rgba(0, 0, 0, 0));
 }
 
 .Container {
@@ -172,12 +190,19 @@ body {
   color: #ffff;
 }
 
-.inp {
-  border: none;
-  border-radius: 15px;
+.intro_texst {
+  text-align: center;
+  margin: 50px auto;
+  width: 50%;
+  background-color: #fff;
+}
+.intro_texst .heding {
+  font-family: "Julius Sans One", sans-serif;
+  text-decoration: underline #d4af37;
+  font-size: 5rem;
+}
+.intro_texst .main_texst {
   padding: 20px;
-  margin: 10px;
-  outline: none;
 }
 
 #myVideo {
