@@ -18,51 +18,50 @@ body {
 
 .logo {
   text-align: center;
-  padding: 20px;
+
     -webkit-filter: grayscale(50%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(50%);
     
   
     .logo_img  {
-        margin: 20px;
-    
+
+        width: 300px;
   
     }
   
     .under_log_texst{
         text-align: center;
-        color: #fff;
+        color: $fontColr;
+     
+        font-size: 10px;
         font-family: $GamFont;
+
+          
     } 
+    .hr_syl{
+        border: 0;
+      height: 1px;
+      width: 50%;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(212, 175, 52, 0.75), rgba(0, 0, 0, 0));
+      }
   }
 
 
   
 
-.head-ing{
-    text-align: center;
-    font-size: 1rem;
-    
-    .elements{
-        background-color: gold;
-        font-size: 1rem;
-    }
-    
-}
 .Rap_mov{                                                       //the hidden img.
-    width: 150px;
+    width: 250px;
     border-radius: 10px 10px 0px 0px;
      background-color:transparent;
      margin: 30px auto;
      position: absolute; 
     bottom: 0;
-    height: 140%;
-     left: 20%;
-     right: 34%;
+    height: 190%;
+ 
+ 
      z-index: -100;
    
-     
     -webkit-animation-name: upCale; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
   
@@ -74,7 +73,8 @@ body {
 .moving{                                                        ///the main column whit nr 1
     width: 250px;
    border-radius: 10px 10px 0px 0px;
-    background-color: white;
+    background-color: $fontColr;
+  
     margin: 0px auto;
     position: absolute; 
     bottom: 0;
@@ -88,7 +88,7 @@ body {
     .moving_Symbol{
         text-align: center;
         padding-top: 40px; 
-        font-size: 200px;
+        font-size: 100px;
     }
 
 }
@@ -111,13 +111,13 @@ body {
 @-webkit-keyframes example  {                           //anmiasjon for the whit column 
     0% { height: 90px; }
   
-    100%{ height: 450px;}
+    100%{ height: 200px;}
 }
 
 @keyframes example {                                      //anmiasjon for the whit column 
     0% { height: 90px; }
    
-    100%{ height: 450px;}
+    100%{ height: 200px;}
   
 }
 
@@ -130,17 +130,30 @@ body {
 @-webkit-keyframes upCale{
     0% { height: 60px; }
    
-    100%{ height: 550px;}
+    100%{ height: 390px;}
 }
                                                         //animasjon for the hidden column
 @keyframes upCale {
     0% { height: 60px; }
   
-    100%{ height: 550px;}
+    100%{ height: 390px;}
   
 }
 
+.posijon{
+    color: $fontColr2;
+    font-size: 100px;
+    bottom: 0;
 
+    position: absolute; 
+    bottom: 0;
+    .item{
+        color: $fontColr2;
+        font-size: 50px;
+        bottom: 0;
+        padding-left: 10px;
+    }
+}
 
 
 
@@ -150,6 +163,9 @@ body {
         left: 14%;
         right: 14%;
         bottom: 0;
+    }
+    .posijon{
+        top: 0;
     }
 }
 

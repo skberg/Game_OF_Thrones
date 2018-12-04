@@ -80,8 +80,8 @@ body {
 .center_Contst #Conts .players .undo_player:hover {
   display: inline;
   float: left;
-  background-color: #d4af37;
-  color: #000;
+  background-color: #ffffff;
+  color: black;
   border-radius: 20px;
   width: 100px;
   padding: 5px;

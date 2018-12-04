@@ -20,10 +20,10 @@
 
             
             
-            <audio id="myadio" controls autoplay loop preload="auto">
+            <!-- <audio id="myadio" controls autoplay loop preload="auto">
                     <source src="../_video/adio/283_full_cinematic-inspiration_0210_preview.mp3" type="audio/ogg">
                     <source src="../_video/adio/283_full_cinematic-inspiration_0210_preview.mp3" type="audio/mpeg">
-                  </audio>
+                  </audio> -->
 
 
             <div class="[ logo ]">
@@ -49,7 +49,7 @@
     <div class="[ disk ]">
             <p class="[ text ]">Player 1</p>
         <div id="die1" class="[ dice ]">0</div>
-        <button class="[ button_Disk ]" onclick="rollDice()">Roll Dice</button>
+        <button id="Button1" class="[ button_Disk ]" onclick="rollDice()">Roll Dice</button>
         <div class="[ Disk_Img_1 ]" id="player_1"> 
           
         </div>
@@ -63,7 +63,7 @@
     <div class="[ disk_venster ]">
             <p class="[ text_v ]">player 2</p>
             <div id="die2" class="[ dice_venstere ]">0</div>
-            <button class="[ button_Disk_venstere ]" onclick="rollDice_2()">Roll Dice</button>   
+            <button id="Button2" class="[ button_Disk_venstere ]" onclick="rollDice_2()">Roll Dice</button>   
             <div id="player_2_v" class="[ Disk_Img_2 ]"></div>
         
     
@@ -74,7 +74,7 @@
          
 
 
-
+      
 
 
 
@@ -82,144 +82,145 @@
 
     <div class="[ Container ]">
 
-        <div class="[ cardElement ]" id="51">
-            <h1>end</h1>
-
-        </div>
-        <div class="[ cardElement ]" id="50">
-            <div><img src="./Bilde/Banner_House_slange.svg" alt="bilder"></div>
-        </div>
-        <div class="[ cardElement ]" id="49">
-
-        </div>
         <div class="[ cardElement ]" id="48">
+            <h1>end</h1>
 
         </div>
         <div class="[ cardElement ]" id="47">
             <div><img src="./Bilde/Banner_House_slange.svg" alt="bilder"></div>
         </div>
         <div class="[ cardElement ]" id="46">
-            <div><img src="./Bilde/Banner_House_slange.svg" alt="bilder"></div>
+
         </div>
         <div class="[ cardElement ]" id="45">
 
         </div>
-
         <div class="[ cardElement ]" id="44">
-
+         
         </div>
         <div class="[ cardElement ]" id="43">
-          
+           
         </div>
         <div class="[ cardElement ]" id="42">
-        
+
         </div>
-        <div class="[ cardElement ]" id="41"> 
-       
+
+        <div class="[ cardElement ]" id="41">
+
         </div>
         <div class="[ cardElement ]" id="40">
-
+          
         </div>
-
         <div class="[ cardElement ]" id="39">
-
-
-
+        
         </div>
-        <div class="[ cardElement ]" id="38">
-
+        <div class="[ cardElement ]" id="38"> 
+       
         </div>
         <div class="[ cardElement ]" id="37">
 
         </div>
+
         <div class="[ cardElement ]" id="36">
 
+
+
         </div>
         <div class="[ cardElement ]" id="35">
 
         </div>
-        <div class="[ cardElement ]" id="35">
-        
-          
-        </div>
-
         <div class="[ cardElement ]" id="34">
-            
-
 
         </div>
         <div class="[ cardElement ]" id="33">
-         
+
         </div>
         <div class="[ cardElement ]" id="32">
 
         </div>
         <div class="[ cardElement ]" id="31">
-
+        
+          
         </div>
+
         <div class="[ cardElement ]" id="30">
+            
+
 
         </div>
         <div class="[ cardElement ]" id="29">
-
+         
         </div>
-
         <div class="[ cardElement ]" id="28">
 
-          
         </div>
         <div class="[ cardElement ]" id="27">
-            
+
         </div>
-        <div class="[ cardElement" ] id="26">
-          
+        <div class="[ cardElement ]" id="26">
+
         </div>
         <div class="[ cardElement ]" id="25">
 
         </div>
+
         <div class="[ cardElement ]" id="24">
-     
+
+          
         </div>
         <div class="[ cardElement ]" id="23">
-
+            
         </div>
-        <div class="[ cardElement ]" id="22">
-
+        <div class="[ cardElement" ] id="22">
+          
         </div>
-
         <div class="[ cardElement ]" id="21">
-
-
 
         </div>
         <div class="[ cardElement ]" id="20">
-
-
-           
+     
         </div>
         <div class="[ cardElement ]" id="19">
 
         </div>
         <div class="[ cardElement ]" id="18">
-                <img class="[ cardElement_Not_IMg ]" src="../_Coding/Bilde/pattersn/GOt.svg" alt="" >
-             
-        </div>
-        <div class="[ hidden ]">
 
         </div>
+
         <div class="[ cardElement ]" id="17">
-            
+
+
+
+        </div>
+        <div class="[ hidden ]" >
+
+
+           
         </div>
         <div class="[ cardElement ]" id="16">
 
         </div>
+        <div class="[ hidden]" >
+              
+             
+        </div>
+     
+        <div class="[ hidden ]">
 
+        </div>
+        <div class="[ hidden ]">
+            
+        </div>
         <div class="[ cardElement ]" id="15">
+
+        </div>
+
+        <div class="[ cardElement ]" id="14">
 
 
 
         </div>
-        <div class="[ cardElement ]" id="14">
+        <div class="[ hidden ]" >
 
 
 
@@ -233,85 +234,69 @@
         <div class="[ cardElement ]" id="13">
 
         </div>
+       
+            <div class="Fram_Trap">
+                <div class="[ cardElement_TRap ]" id="90">
+            
+                    <img class="[ cardElement_Not_IMg ]" src="../_Coding/Bilde/Trapp.svg" alt="">
+            
+                </div>
+            
+                <div id="safeTimer">
+                    <p id="safeTimerDisplay">00:30</p>
+                </div>
+            
+            </div>
         <div class="[ cardElement ]" id="12">
-
-        </div>
-        <div class="[ cardElement ]" id="11">
       
         </div>
 
+        <div class="[ cardElement ]" id="11">
+
+
+
+        </div>
         <div class="[ cardElement ]" id="10">
 
 
 
         </div>
+        <div class="[ hidden ]">
+
+        </div>
+
         <div class="[ cardElement ]" id="9">
 
-
-
         </div>
-        <div class="[ hidden ]">
-
-        </div>
-
         <div class="[ cardElement ]" id="8">
-
         </div>
         <div class="[ cardElement ]" id="7">
-
-        </div>
-        <div class="[ cardElement ]">
-      
         </div>
 
         <div class="[ hidden ]">
-
         </div>
         <div class="[ cardElement ]" id="6">
-
-
-
         </div>
-        <div class="[ hidden ]">
+        <div class="[ hidden ]"></div>
 
-
-
-        </div>
-
-        <div class="[ hidden ]">
-
-        </div>
-        <div class="[ hidden ]">
-
-        </div>
+        <div class="[ hidden ]"></div>
+       
+        <div class="[ hidden ]"></div>
 
         <div class="[ cardElement ]" id="5">
-
         </div>
         <div class="[ cardElement ]" id="4">
-
         </div>
-        <div class="[ hidden ]">
-
-        </div>
-        <div class="[ hidden ]">
-
-        </div>
-
-        <div class="[ hidden ]">
-
-        </div>
+        <div class="[ hidden ]"></div>
+        <div class="[ hidden ]"></div>
+        <div class="[ hidden ]"> </div>
 
         <div class="[ cardElement ]" id="3">
-
         </div>
         <div class="[ cardElement ]" id="2">
-
         </div>
-
         <div class="[ cardElement ]" id="1">
             <h1>start</h1>
-           
             <p id="player1"></p>
             <p id="player2"></p>
         </div>
@@ -326,7 +311,9 @@
 <div class="[ intro_texst ]">
     <div class="[ heding ]">
         let the game begin
+    
     </div>
+    <hr class="[ hr_syl ]">
     <p class="[ main_texst ]">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
         Dicta quis enim id error architecto recusandae quam facilis dolore sint 

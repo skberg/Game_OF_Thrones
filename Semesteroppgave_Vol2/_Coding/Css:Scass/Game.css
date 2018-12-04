@@ -26,7 +26,8 @@ audio {
   color: #fff;
   font-family: "Game of Thrones";
 }
-.logo .hr_syl {
+
+.hr_syl {
   border: 0;
   height: 1px;
   width: 50%;
@@ -50,48 +51,21 @@ audio {
   font-size: 10px;
   color: #d4af37;
 }
-.Container .cardElementWall {
-  background-color: lightblue;
+.Container .cardElement_TRap {
+  background-color: #505050;
   padding: 50px;
-  height: 100%;
-  font-family: "Game of Thrones";
-  text-align: center;
-  font-size: 10px;
-  color: #d4af37;
+  margin: 35px;
+  border-radius: 20px 0px 20px 0px;
+  border: #d4af37 2px solid;
 }
-.Container .cardElement_Not {
-  background-color: black;
-  padding: 50px;
-  height: 100%;
-  font-family: "Game of Thrones";
+.Container .Fram_Trap {
+  border: #fff 1px;
   text-align: center;
-  font-size: 10px;
-  color: #d4af37;
-}
-.Container .cardElement_Not .cardElement_Not_IMg {
-  background-repeat: repeat;
-  float: right;
+  font-size: 30px;
+  color: #fff;
 }
 .Container h1 {
   padding-top: 45px;
-}
-
-.cardElement_Not_blue {
-  border-right: 5px solid blue;
-  background-color: black;
-  height: 100%;
-  font-family: "Game of Thrones";
-  font-size: 10px;
-  color: #d4af37;
-}
-
-.cardElement_Not_blue_bottom {
-  border-bottom: 5px solid blue;
-  background-color: rgba(95, 123, 160, 0.932);
-  height: 100%;
-  font-family: "Game of Thrones";
-  font-size: 10px;
-  color: #d4af37;
 }
 
 .disk {
@@ -192,14 +166,15 @@ audio {
 
 .intro_texst {
   text-align: center;
-  margin: 50px auto;
-  width: 50%;
+  max-width: 1000px;
+  margin: 5px auto;
+  width: 1000px;
+  border-radius: 0px 0px 20px 20px;
   background-color: #fff;
 }
 .intro_texst .heding {
   font-family: "Julius Sans One", sans-serif;
-  text-decoration: underline #d4af37;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .intro_texst .main_texst {
   padding: 20px;
