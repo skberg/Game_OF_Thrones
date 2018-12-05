@@ -43,9 +43,8 @@ audio {
   grid-gap: 2px;
 }
 .Container .cardElement {
-  background-color: #ffff;
+  background-color: #fff;
   padding: 50px;
-  height: 100%;
   font-family: "Game of Thrones";
   text-align: center;
   font-size: 10px;
@@ -57,9 +56,11 @@ audio {
   margin: 35px;
   border-radius: 20px 0px 20px 0px;
   border: #d4af37 2px solid;
+  -webkit-filter: grayscale(50%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(50%);
 }
 .Container .Fram_Trap {
-  border: #fff 1px;
   text-align: center;
   font-size: 30px;
   color: #fff;
@@ -77,17 +78,15 @@ audio {
   position: fixed;
   top: 2%;
   right: 2%;
+  -webkit-filter: grayscale(50%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(50%);
 }
 .disk .Disk_Img_1 {
   background-color: #375DAA;
   border-radius: 10px;
   padding: 14px;
   margin: 15px;
-}
-.disk .Disk_Img_1 .Disk_Img_text {
-  background-color: aqua;
-  color: #ffff;
-  padding: 50px;
 }
 .disk .dice {
   float: center;
@@ -97,21 +96,11 @@ audio {
   border-radius: 10px;
   font-size: 24px;
 }
-.disk .dice .text {
-  background-color: aqua;
-  color: #ffff;
-  padding: 50px;
-}
 .disk .button_Disk {
   border: none;
   padding: 10px;
   border-radius: 25px;
   margin: 10px;
-}
-.disk .Disk_Img_text {
-  background-color: aqua;
-  color: #ffff;
-  padding: 50px;
 }
 
 .text {
@@ -133,6 +122,9 @@ audio {
   position: fixed;
   top: 3%;
   left: 2%;
+  -webkit-filter: grayscale(50%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(50%);
 }
 .disk_venster .dice_venstere {
   float: center;

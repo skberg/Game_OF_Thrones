@@ -209,47 +209,86 @@ case "House Baelish of Harrenhal":
 document.getElementsByClassName("button_Disk ").bgcolor="#375DAA";
 */
 
+
+var play1 = {
+    house: "#",
+    tile: 0
+
+
+}
+var play2 = {
+    house: "#",
+    tile: 0
+
+
+}
+
+
 var start = 1;
 var bigin = 1;
 
 function rollDice() {                                          //dice player 1
     var die1 = document.getElementById("die1");
-    var d1 = Math.floor(Math.random() * 6) + 1;
+var i = 0;
+
+
+function delayRoling1(){                                           //rompa er deslay på dicen. 
     document.getElementById("Button2").disabled = false;
-    die1.innerHTML = d1;
-    moving_blue(d1);
-    document.getElementById("Button1").disabled = true;
-  
+    document.getElementById("Button2").style.background='#ffff';   
+    setTimeout(() => {
+        if(i == 15) {
+            var d1 = Math.floor(Math.random() * 6) + 1;
+            die1.innerHTML = d1;
+            moving_blue(d1);
+            document.getElementById("Button1").disabled = true;
+            document.getElementById("Button1").style.background='#666666';   
+                    
+        }else{
+            var d1 = Math.floor(Math.random() * 6) + 1;
+            die1.innerHTML = d1;
+            i++;
+            delayRoling1();
+        }
+    }, 100);
+}
+
+delayRoling1();
+
+
   
    
 }
 
 
-var d2 = 1;
+
 
 function rollDice_2() {                                     //dice player 2
     var die2 = document.getElementById("die2");
-  
-
-    setTimeout(function(){
-        var d2 = Math.floor(Math.random() * 6) + 1;
+    var i = 0
     
-        die2.innerHTML = d2;
-    }, 900);
-
-  
-
-
-
-
-    document.getElementById("Button1").disabled = false;
-  
-    moving_green(d2);
-    
-    document.getElementById("Button2").disabled = true;
+    function DelayRoling2(){                                               //rompa er deslay på dicen. 
+        document.getElementById("Button1").disabled = false;
+        document.getElementById("Button1").style.background='#ffff';   
+        
+        setTimeout(() => {
+            if(i == 15) {
+                var d2 = Math.floor(Math.random() * 6) + 1;
+                die2.innerHTML = d2;
+                moving_green(d2);
+                document.getElementById("Button2").disabled = true;
+                document.getElementById("Button2").style.background='#666666';    
+            }else{
+                var d2 = Math.floor(Math.random() * 6) + 1;
+                die2.innerHTML = d2;
+                i++;
+                DelayRoling2();
+            }
+        }, 100);
+    }
  
+    DelayRoling2();
  
- 
+   
 
    
 }
@@ -273,13 +312,13 @@ function moving_blue(d1){
     var brikke = document.getElementById(start);
 
     
-    brikke.style.backgroundColor ="white";                  //Card Standar farge 
+            //Card Standar farge 
 
 
     for(i = 0; i < d1; i++){
         setTimeout(function(){
             start = start + 1                       //forteller at nå dy trykker på d2 så skal den bevege seg 1 utifra det tallet 
-     
+            hasWon(start, "player 1");
             brikke = document.getElementById(start);        // dyttter den på brikketene
            
            
@@ -288,7 +327,8 @@ function moving_blue(d1){
         
     }
     // brikke.style.backgroundColor = "#375DAA";               //independet color after players 
-    myFeller(player1);
+   myFeller(player1);
+  
 }
 
 
@@ -310,14 +350,15 @@ function moving_green(d2){
     var brikke = document.getElementById(bigin);        //henter den golbale variabelen 
 
     
-    brikke.style.backgroundColor ="white";                  //Card Standar farge 
-
+   
 
     
     for(i = 0; i < d2; i++){
         setTimeout(function(){
             bigin = bigin + 1                       //forteller at nå dy trykker på d2 så skal den bevege seg 1 utifra det tallet 
-     
+            
+            hasWon(bigin, "player 2");
+
             brikke = document.getElementById(bigin);        // dyttter den på brikketene
            
            
@@ -327,39 +368,86 @@ function moving_green(d2){
     
         
     }
+    myFeller(player2);
+
 }
 
 
 
 
 
-             //independet color after players 
+
+
+
+
+
+/////////////////////////////////////////////////////////////////help
+
+function hasWon(currentTile, player) {
+    if (currentTile >= 48) {
+
+
+        
+       // localstorage win = player
+        if (player === "play1"){
+            localStorage.removeItem("Player 2");
+            window.open("gol.html"); 
+           
+        }else{
+            localStorage.removeItem("Player 1"); 
+            window.open("gol.html"); 
+           
+        }
+        
     
-    myFeller(player2);
+       
+     
+       
+    }
+
+   
+    return false;
+}
+
+//////////////////////////////////////////////////////////////////
+
+
+
+             //independet color after players 
 
 
 
 
 
-var adi = document.getElementById("myadio");                //The audio volium controll 
-adi.volume = 0.1;
+
+
+// var adi = document.getElementById("myadio");                //The audio volium controll 
+// adi.volume = 0.1;
  
 
 
 
 
 function myFeller(player){
-    var feller = [ 20, 30, 40, 23, 32, 25, 28, 44, 43, 47 ];
+    var feller = [ 19 ];
+    //var feller = [ 19, 20, 30, 40, 23, 32, 25, 28, 44, 43, 47 ];
     for(var i = 0; i < feller.length; i++){
         if (feller[i] == start){ 
+            alert("you are in prisen play1");
             var brikke = document.getElementById(90);           //trap med id 90
             brikke.appendChild(player);
+            myTellerFeller();
+            console.log("1");
             start = 13;
            
         }else if (feller[i] ==  bigin ) {
+            alert("you are in prisen play2");
             var brikke = document.getElementById(90);
             brikke.appendChild(player);
-            bigin = 13;                                 //forteller for loopen at når du kommer ut av fengsil skal du starte på id 13
+            console.log("2");
+            myTellerFeller();
+            bigin = 13;
+                                            //forteller for loopen at når du kommer ut av fengsil skal du starte på id 13
         }
     }
 }
@@ -368,28 +456,26 @@ function myFeller(player){
 
 
 
+// ned teler 
+function myTellerFeller(){ 
+    var timeleft = 30;
+    var downloadTimer = setInterval(function(){
+        
+       
 
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+         
 
-function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10)
-        seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = 0;
-            // timer = duration; // uncomment this line to reset timer automatically after reaching 0
-        }
-    }, 1000);
+   
+    
+    if(timeleft <= 0)                           //porblem  cant get the player icon to stay in the 90 id untill the timer rund out
+  
+        clearInterval(downloadTimer);
+     
+    
+    },1000);
 }
 
-window.onload = function () {
-    var time = 60 / 2, // your time in seconds here
-        display = document.querySelector('#safeTimerDisplay');
-    startTimer(time, display);
-};
+
+ 

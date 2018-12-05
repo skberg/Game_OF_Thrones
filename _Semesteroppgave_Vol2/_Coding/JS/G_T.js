@@ -97,7 +97,6 @@ function CardElm(myJson) {
 
 
 
-        // mylist.setAttribute('id', myJson[i].gender + i);
 
         MyDiv.addEventListener("click", function () {
             if (play1.house === "#") {
