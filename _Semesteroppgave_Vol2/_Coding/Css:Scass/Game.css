@@ -3,6 +3,10 @@
   font-family: Game of Tsrones;
   src: url(../../Game.of.thrones.font/GameofThrones.woff);
 }
+@font-face {
+  font-family: Gamnord;
+  src: url(../../Game.of.thrones.font/higher_marisa_passos/Higher.ttf);
+}
 body {
   background-color: rgba(17, 15, 10, 0.904) !important;
 }
@@ -19,12 +23,13 @@ audio {
   filter: grayscale(50%);
 }
 .logo .logo_img {
-  margin: 20px;
+  margin: 80px;
 }
 .logo .under_log_texst {
   text-align: center;
-  color: #fff;
-  font-family: "Game of Thrones";
+  color: #d4af37;
+  font-size: 60px;
+  font-family: "Gamnord";
 }
 
 .hr_syl {
@@ -36,6 +41,8 @@ audio {
 
 .Container {
   background-color: rgba(80, 80, 80, 0.541);
+  border-radius: 25px;
+  padding: 25px;
   max-width: 1000px;
   margin: auto;
   display: grid;
@@ -45,9 +52,9 @@ audio {
 .Container .cardElement {
   background-color: #fff;
   padding: 50px;
-  font-family: "Game of Thrones";
+  font-family: "Gamnord";
   text-align: center;
-  font-size: 10px;
+  font-size: 20px;
   color: #d4af37;
 }
 .Container .cardElement_TRap {
@@ -63,10 +70,21 @@ audio {
 .Container .Fram_Trap {
   text-align: center;
   font-size: 30px;
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.783);
+  margin: 12px;
+  border-radius: 20px;
 }
-.Container h1 {
-  padding-top: 45px;
+.Container .Fram_Trap #Countdown_Blue {
+  color: #375DAA;
+  margin: 15px;
+  font-family: "Gamnord";
+  font-size: 50px;
+}
+.Container .Fram_Trap #countdown_Green {
+  color: #57883D;
+  margin: 15px;
+  font-family: "Gamnord";
+  font-size: 50px;
 }
 
 .disk {
@@ -75,40 +93,47 @@ audio {
   text-align: center;
   float: center;
   margin: 50px;
+  padding: 25px;
   position: fixed;
   top: 2%;
   right: 2%;
   -webkit-filter: grayscale(50%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(50%);
+  background-color: #fff;
+  border-radius: 25px;
 }
 .disk .Disk_Img_1 {
   background-color: #375DAA;
   border-radius: 10px;
   padding: 14px;
-  margin: 15px;
+  margin: 25px;
 }
 .disk .dice {
   float: center;
-  width: 55px;
+  width: 100%;
+  color: #fff;
   margin: auto;
   background: #375DAA;
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 54px;
 }
 .disk .button_Disk {
   border: none;
-  padding: 10px;
+  width: 100%;
   border-radius: 25px;
-  margin: 10px;
+  margin: 5px auto;
+  padding: 5px;
+  background-color: lightgrey;
 }
 
 .text {
   float: center;
   background-color: #375DAA;
+  width: 100%;
+  border-radius: 25px;
+  margin: 5px auto;
   padding: 5px;
-  margin: 10px auto;
-  width: 80px;
   border-radius: 15px;
   color: #ffff;
 }
@@ -119,26 +144,32 @@ audio {
   text-align: center;
   float: center;
   margin: 50px;
+  padding: 25px;
   position: fixed;
   top: 3%;
   left: 2%;
   -webkit-filter: grayscale(50%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(50%);
+  background-color: #fff;
+  border-radius: 25px;
 }
 .disk_venster .dice_venstere {
   float: center;
-  width: 55px;
+  width: 100%;
   margin: auto;
+  color: #fff;
   background: #57883D;
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 54px;
 }
 .disk_venster .button_Disk_venstere {
   border: none;
-  padding: 10px;
+  width: 100%;
   border-radius: 25px;
-  margin: 10px;
+  margin: 5px auto;
+  padding: 5px;
+  background-color: lightgrey;
 }
 .disk_venster .Disk_Img_2 {
   border-radius: 10px;
@@ -149,9 +180,10 @@ audio {
 .disk_venster .text_v {
   float: center;
   background-color: #57883D;
+  width: 100%;
+  border-radius: 25px;
+  margin: 5px auto;
   padding: 5px;
-  margin: 10px auto;
-  width: 80px;
   border-radius: 15px;
   color: #ffff;
 }
@@ -165,8 +197,8 @@ audio {
   background-color: #fff;
 }
 .intro_texst .heding {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 3rem;
+  font-family: "Gamnord";
+  font-size: 6rem;
 }
 .intro_texst .main_texst {
   padding: 20px;
@@ -189,7 +221,7 @@ audio {
   left: 0;
   min-width: 100%;
   min-height: 100%;
-  opacity: 0.5;
+  opacity: 0.4;
   z-index: -100;
 }
 

@@ -2,12 +2,17 @@ $GamFont: 'Game of Thrones';
 $fontColr: rgb(212, 175, 55);
 $introFont: 'Julius Sans One',
 sans-serif;
+$gambord: 'Gamnord';
 $fontColr2: rgba(212, 175, 55, 0.747);
 
 
 @font-face {
   font-family: Game of Tsrones;
   src: url(../../Game.of.thrones.font/GameofThrones.woff);
+}
+@font-face{
+  font-family: Gamnord;
+  src: url(../../Game.of.thrones.font/higher_marisa_passos/Higher.ttf);
 }
 
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
@@ -31,12 +36,13 @@ audio{
 .logo {
   text-align: center;
   padding: 20px;
+  
    -webkit-filter: grayscale(50%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(50%);
 
   .logo_img  {
-    margin: 20px;
+    margin: 80px;
 
    
 
@@ -44,8 +50,9 @@ audio{
   }
   .under_log_texst{
     text-align: center;
-    color: #fff;
-    font-family: $GamFont;
+    color: $fontColr;
+    font-size: 60px;
+    font-family: $gambord;
 } 
 
 
@@ -63,7 +70,8 @@ audio{
 
 .Container {
   background-color: rgba(80, 80, 80, 0.541);
-
+  border-radius: 25px;
+  padding: 25px;
   max-width: 1000px;
   margin: auto;
   display: grid;
@@ -76,9 +84,9 @@ audio{
   .cardElement { 
     background-color: #fff;
     padding: 50px;
-    font-family: $GamFont;
+    font-family: $gambord;
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
     color: $fontColr;
   }
 
@@ -102,14 +110,27 @@ audio{
   .Fram_Trap{
     text-align: center;
     font-size: 30px;
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.783);
+    margin: 12px;
+    border-radius: 20px;
+    
+    #Countdown_Blue{
+      color: #375DAA;
+      margin: 15px;
+      font-family: $gambord;
+      font-size: 50px;
+    }
+    #countdown_Green{
+      color: #57883D;
+      margin: 15px;
+      font-family: $gambord;
+      font-size: 50px;
+    }
   }
 
 
 
-  h1 {
-    padding-top: 45px;
-  }
+  
 
 }
 
@@ -134,18 +155,24 @@ audio{
   text-align: center;
   float: center;
   margin: 50px;
+  padding: 25px;
   position: fixed;
   top: 2%;
   right: 2%;
   -webkit-filter: grayscale(50%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(50%);
+  background-color: #fff;
+  border-radius: 25px;
+
+
 
   .Disk_Img_1 {
     background-color: #375DAA;
     border-radius: 10px;
     padding: 14px;
-    margin: 15px;
+    
+    margin: 25px;
 
   }
 
@@ -154,11 +181,12 @@ audio{
 
   .dice {
     float: center;
-    width: 55px;
+    width: 100%;
+    color: #fff;
     margin: auto;
     background: #375DAA;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 54px;
     
   
 
@@ -166,9 +194,11 @@ audio{
 
   .button_Disk {
     border: none;
-    padding: 10px;
+    width: 100%;
     border-radius: 25px;
-    margin: 10px;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: lightgrey;
   }
 
 }
@@ -176,9 +206,10 @@ audio{
   .text {
     float: center;
     background-color: #375DAA;
+    width: 100%;
+    border-radius: 25px;
+    margin: 5px auto;
     padding: 5px;
-    margin: 10px auto;
-    width: 80px;
     border-radius: 15px;
     color: #ffff;
 
@@ -192,7 +223,7 @@ audio{
   text-align: center;
   float: center;
   margin: 50px;
-
+  padding: 25px;
   position: fixed;
   top: 3%;
   left: 2%;
@@ -200,16 +231,17 @@ audio{
   -webkit-filter: grayscale(50%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(50%);
-
+  background-color: #fff;
+  border-radius: 25px;
   .dice_venstere {
-
     float: center;
-    width: 55px;
+    width: 100%;
     margin: auto;
-
+    color: #fff;
     background: #57883D;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 54px;
+    
 
 
 
@@ -217,9 +249,11 @@ audio{
 
   .button_Disk_venstere {
     border: none;
-    padding: 10px;
+    width: 100%;
     border-radius: 25px;
-    margin: 10px;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: lightgrey;
   }
 
 
@@ -234,10 +268,10 @@ audio{
   .text_v {
     float: center;
     background-color: #57883D;
+    width: 100%;
+    border-radius: 25px;
+    margin: 5px auto;
     padding: 5px;
-    margin: 10px auto;
-    width: 80px;
-    ;
     border-radius: 15px;
     color: #ffff;
 
@@ -255,8 +289,8 @@ audio{
   border-radius: 0px 0px 20px 20px;
   background-color: #fff;
   .heding{
-    font-family: $introFont;
-    font-size: 3rem;
+    font-family: $gambord;;
+    font-size: 6rem;
   }
   .main_texst{
     padding: 20px;
@@ -277,6 +311,7 @@ audio{
   min-height: 100%;
   opacity: 0.4;
   z-index: -100;
+ 
 }
 
 #myVideo2 {
@@ -285,7 +320,7 @@ audio{
   left: 0;
   min-width: 100%;
   min-height: 100%;
-  opacity: 0.5;
+  opacity: 0.4;
   z-index: -100;
 
 }

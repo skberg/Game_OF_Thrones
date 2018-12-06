@@ -347,7 +347,7 @@ function moving_green(d2){
     } else {
         spillertur = 2;
     }
-    var brikke = document.getElementById(bigin);        //henter den golbale variabelen 
+    var brikke2 = document.getElementById(bigin);        //henter den golbale variabelen 
 
     
    
@@ -359,10 +359,10 @@ function moving_green(d2){
             
             hasWon(bigin, "player 2");
 
-            brikke = document.getElementById(bigin);        // dyttter den på brikketene
+            brikke2 = document.getElementById(bigin);        // dyttter den på brikketene
            
            
-            brikke.appendChild(player2);                //flytter id
+            brikke2.appendChild(player2);                //flytter id
         }, 450 * i)
   
     
@@ -375,7 +375,7 @@ function moving_green(d2){
 
 
 
-//////
+
 
 
 
@@ -389,18 +389,19 @@ function hasWon(currentTile, player) {
 
         
        // localstorage win = player
-        if (player === "play1"){
-            localStorage.removeItem("Player 2");
-            window.open("gol.html"); 
-           
-        }else{
-            localStorage.removeItem("Player 1"); 
-            window.open("gol.html"); 
+        if (player = "player 1"){
+            //localStorage.removeItem("Player 2");
+            window.location.href="Gol.html";
            
         }
-        
+        //if (Player = "player 2"){
+            //localStorage.removeItem("Player 1"); 
+          //  window.location.href='Gol.html';
+           
+        //}
+       //window.open("gol.html");
     
-       
+       console.log(player);
      
        
     }
@@ -429,53 +430,99 @@ function hasWon(currentTile, player) {
 
 
 function myFeller(player){
-    var feller = [ 19 ];
-    //var feller = [ 19, 20, 30, 40, 23, 32, 25, 28, 44, 43, 47 ];
+
+    var feller = [ 19, 20, 30, 40, 23, 32, 25, 28, 44, 43, 47 ];
     for(var i = 0; i < feller.length; i++){
         if (feller[i] == start){ 
             alert("you are in prisen play1");
-            var brikke = document.getElementById(90);           //trap med id 90
-            brikke.appendChild(player);
-            myTellerFeller();
-            console.log("1");
-            start = 13;
+            Player_01_TRapp()
+      
            
-        }else if (feller[i] ==  bigin ) {
+       
+           
+        }if (feller[i] ==  bigin ) {
             alert("you are in prisen play2");
-            var brikke = document.getElementById(90);
-            brikke.appendChild(player);
-            console.log("2");
-            myTellerFeller();
-            bigin = 13;
+            myTellerFeller()
+            
+           
                                             //forteller for loopen at når du kommer ut av fengsil skal du starte på id 13
         }
     }
+
 }
 
 
 
-
-
+var isPlayer1InJail = true;
+var isPlayer2InJail = true;
 // ned teler 
 function myTellerFeller(){ 
     var timeleft = 30;
     var downloadTimer = setInterval(function(){
-        
+        document.getElementById("Button1").disabled = false;
+        document.getElementById("Button1").style.background='#ffff'; 
        
 
     timeleft--;
-    document.getElementById("countdowntimer").textContent = timeleft;
-         
+    document.getElementById("countdown_Green").textContent = timeleft;
+ 
+    
+    if (brikke2 = isPlayer2InJail){
+        var brikke2 = document.getElementById(90);
+        brikke2.appendChild(player2);
+        document.getElementById("Button2").disabled = true;
+        document.getElementById("Button2").style.background='#666666';  
+    }
+    
 
-   
     
     if(timeleft <= 0)                           //porblem  cant get the player icon to stay in the 90 id untill the timer rund out
   
         clearInterval(downloadTimer);
-     
-    
+          
+        return false;
+       
     },1000);
+
+    bigin = 13;
 }
 
 
+
+
+
+
+
+
+
+function Player_01_TRapp(){ 
+    var timeleft = 30;
+    var downloadTimer = setInterval(function(){
+        
+        document.getElementById("Button2").disabled = false;
+        document.getElementById("Button2").style.background='#ffff'; 
+
+    timeleft--;
+    document.getElementById("Countdown_Blue").textContent = timeleft;
  
+    
+    if (brikke1 = isPlayer1InJail){
+        var brikke1 = document.getElementById(90);
+        brikke1.appendChild(player1);
+        document.getElementById("Button1").disabled = true;
+        document.getElementById("Button1").style.background='#666666';  
+    }
+    
+
+    
+    if(timeleft <= 0)                           //porblem  cant get the player icon to stay in the 90 id untill the timer rund out
+            
+            
+        clearInterval(downloadTimer);
+      
+        return false;
+       
+    },1000);
+    
+    start = 13;
+}
