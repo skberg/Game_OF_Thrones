@@ -262,10 +262,11 @@ delayRoling1();
 
 
 
-function rollDice_2() {                                     //dice player 2
+function rollDice_2() {   
+                                //dice player 2
     var die2 = document.getElementById("die2");
     var i = 0
-    
+  
     function DelayRoling2(){                                               //rompa er deslay på dicen. 
         document.getElementById("Button1").disabled = false;
         document.getElementById("Button1").style.background='#ffff';   
@@ -295,7 +296,7 @@ function rollDice_2() {                                     //dice player 2
 
 
 
-////Hjelp!!!!!!!11
+
 
 function moving_blue(d1){
 
@@ -317,15 +318,17 @@ function moving_blue(d1){
 
     for(i = 0; i < d1; i++){
         setTimeout(function(){
-            start = start + 1                       //forteller at nå dy trykker på d2 så skal den bevege seg 1 utifra det tallet 
+            start = start + 1   
+                             //forteller at nå dy trykker på d2 så skal den bevege seg 1 utifra det tallet 
             hasWon(start, "player 1");
             brikke = document.getElementById(start);        // dyttter den på brikketene
            
            
             brikke.appendChild(player1);                //flytter id
         }, 450 * i)
-        
+       
     }
+   
     // brikke.style.backgroundColor = "#375DAA";               //independet color after players 
    myFeller(player1);
   
@@ -368,6 +371,7 @@ function moving_green(d2){
     
         
     }
+
     myFeller(player2);
 
 }
@@ -380,52 +384,27 @@ function moving_green(d2){
 
 
 
-//help 
-/////////////////////////////////////////////////////////////////help
+
+
+
+
 
 function hasWon(currentTile, player) {
     if (currentTile >= 48) {
-
-
-        
-       // localstorage win = player
-        if (player = "player 1"){
-        
-           
-            localStorage.setItem("B" ,"player 1");
-            window.location.href="Gol.html"
-            
-            console.log(hasWon);
-           
-        }else{
-            localStorage.removeItem("Player 2"); 
-        }
-        if (player = "player 2") {
-            localStorage.setItem("G" ,"player 2");
-           
+        console.log(player);
+        if(player === "player 1"){
+            localStorage.removeItem('player 2');
+            console.log("Removing data");
             window.location.href='Gol.html'
-           
-        }else{
-            localStorage.removeItem("Player 1"); 
+        }else if( player === "player 2"){
+            localStorage.removeItem('player 1');
+            console.log("Removing data");
+            window.location.href='Gol.html'
         }
-       
-    
-     
-     
-       
     }
-
-   
     return false;
 }
 
-//////////////////////////////////////////////////////////////////
-
-
-
-
-
-             //independet color after players 
 
 
 
@@ -433,38 +412,92 @@ function hasWon(currentTile, player) {
 
 
 
-// var adi = document.getElementById("myadio");                //The audio volium controll 
-// adi.volume = 0.1;
+
+
+
+
+var adi = document.getElementById("myadio");                //The audio volium controll 
+adi.volume = 0.1;
  
 
 
 
+//the traps 
 
 function myFeller(player){
 
     var feller = [ 19, 20, 30, 40, 23, 32, 25, 28, 44, 43, 47 ];
     for(var i = 0; i < feller.length; i++){
         if (feller[i] == start){ 
-            alert("you are in prisen play1");
+            test()
             Player_01_TRapp()
-      
-           
-       
-           
-        }if (feller[i] ==  bigin ) {
-            alert("you are in prisen play2");
-            myTellerFeller()
-            
-           
-                                            //forteller for loopen at når du kommer ut av fengsil skal du starte på id 13
+ 
+        }
+        if (feller[i] ==  bigin ) {
+            Player2_ALert()
+            myTellerFeller()                                  
         }
     }
+}
+ 
+function test(){
+    
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        modal.style.display = "block";
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
 
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+      
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }  
+}
+function Player2_ALert(){
+     // Get the modal
+     var modal = document.getElementById('myModal2');
+     modal.style.display = "block";
+     // Get the button that opens the modal
+     
+
+     // Get the <span> element that closes the modal
+     var span = document.getElementsByClassName("close")[0];
+
+     // When the user clicks the button, open the modal 
+   
+
+     // When the user clicks on <span> (x), close the modal
+     span.onclick = function() {
+         modal.style.display = "none";
+     }
+
+     // When the user clicks anywhere outside of the modal, close it
+     window.onclick = function(event) {
+         if (event.target == modal) {
+             modal.style.display = "none";
+         }
+     } 
 }
 
 
 
-// ned teler 
+
+
+
+// player 2 timer
 function myTellerFeller(){ 
     var timeleft = 30;
     var downloadTimer = setInterval(function(){
@@ -476,7 +509,7 @@ function myTellerFeller(){
     document.getElementById("countdown_Green").textContent = timeleft;
  
     
-    if (brikke2 = isPlayer2InJail){
+    if (brikke2 = player2){
         var brikke2 = document.getElementById(90);
         brikke2.appendChild(player2);
         document.getElementById("Button2").disabled = true;
@@ -485,7 +518,7 @@ function myTellerFeller(){
     
 
     
-    if(timeleft <= 0)                           //porblem  cant get the player icon to stay in the 90 id untill the timer rund out
+    if(timeleft <= 0)                          
   
         clearInterval(downloadTimer);
           
@@ -502,7 +535,7 @@ function myTellerFeller(){
 
 
 
-
+//player 1 timer 
 
 function Player_01_TRapp(){ 
     var timeleft = 30;
@@ -515,7 +548,7 @@ function Player_01_TRapp(){
     document.getElementById("Countdown_Blue").textContent = timeleft;
  
     
-    if (brikke1 = isPlayer1InJail){
+    if (brikke1 = player1){
         var brikke1 = document.getElementById(90);
         brikke1.appendChild(player1);
         document.getElementById("Button1").disabled = true;
@@ -524,7 +557,7 @@ function Player_01_TRapp(){
     
 
     
-    if(timeleft <= 0)                           //porblem  cant get the player icon to stay in the 90 id untill the timer rund out
+    if(timeleft <= 0)                           
             
             
         clearInterval(downloadTimer);

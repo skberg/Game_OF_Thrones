@@ -24,15 +24,16 @@ body {
 
 .logo {
   text-align: center;
-
+ 
     -webkit-filter: grayscale(50%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(50%);
     
   
     .logo_img  {
-
-        width: 40%;
+        min-height: 200px;
+        width: 30%;
+        margin: 20px;
   
     }
   
@@ -166,6 +167,8 @@ body {
 
                                                     //making it stay central after screen under 600 px
 @media only screen and (max-width: 600px) {
+ 
+   
     .moving{
         left: 14%;
         right: 14%;
