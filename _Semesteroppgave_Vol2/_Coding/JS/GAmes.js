@@ -239,6 +239,7 @@ function delayRoling1(){                                           //rompa er de
         if(i == 15) {
             var d1 = Math.floor(Math.random() * 6) + 1;
             die1.innerHTML = d1;
+          
             moving_blue(d1);
             document.getElementById("Button1").disabled = true;
             document.getElementById("Button1").style.background='#666666';   
@@ -318,15 +319,18 @@ function moving_blue(d1){
 
     for(i = 0; i < d1; i++){
         setTimeout(function(){
+           
             start = start + 1   
                              //forteller at nå dy trykker på d2 så skal den bevege seg 1 utifra det tallet 
             hasWon(start, "player 1");
+         
             brikke = document.getElementById(start);        // dyttter den på brikketene
            
-           
-            brikke.appendChild(player1);                //flytter id
+         
+            brikke.appendChild(player1);  
+                               //flytter id
         }, 450 * i)
-       
+     
     }
    
     // brikke.style.backgroundColor = "#375DAA";               //independet color after players 

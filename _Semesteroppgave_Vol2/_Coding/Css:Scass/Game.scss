@@ -315,6 +315,7 @@ audio{
 
 /* Modal Content */
 .modal-content {
+  background-color: #57883D;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -322,8 +323,9 @@ audio{
     border-radius: 20px;
     .player_txst{
       text-align: center;
-      height: 500px;
+      height: 900px;
       font-size: 200px;
+      padding: 20px;
     }
   
 }
