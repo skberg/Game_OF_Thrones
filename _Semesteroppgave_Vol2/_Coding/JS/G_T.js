@@ -160,9 +160,7 @@ function CardElm(myJson) {
         Mylistitem_Codeofarms.innerHTML = myJson[i].coatOfArms;
         Mylistitem_Words.innerHTML = myJson[i].words;
 
-        myBar.innerHTML = "<progress class='test[i]' max='100' value='80'></progress>"
        
-        myBar2.innerHTML = "<progress class='test' max='100' value='40'></progress>"
 
 
     }

@@ -123,7 +123,7 @@ case "House Appleton of Appleton":
     break;
 case "House Arryn of Gulltown":
     var el = document.getElementById("player_2_v");
-    el.innerHTML="<img src=\"./Bilde/Icons/Blue_Hero.svg\" width=\"500%\" height=\"50%\">";
+    el.innerHTML="<img src=\"./Bilde/Icons/Blue_Hero.svg\" width=\"50%\" height=\"50%\">";
     break;
 case "House Arryn of the Eyrie":
     var el = document.getElementById("player_2_v");
@@ -171,8 +171,8 @@ case "House Appleton of Appleton":
     el.innerHTML="<img src=\"./Bilde/Icons/Wood_Kind_Gray.svg\" width=\"50%\" height=\"50%\">";
     break;
 case "House Arryn of Gulltown":
-    var el = document.getElementById("player_2");
-    el.innerHTML="<img src=\"./Bilde/Icons/Blue_Hero.svg\" width=\"500%\" height=\"50%\">";
+    var el = document.getElementById("player2");
+    el.innerHTML="<img src=\"./Bilde/Icons/Blue_Hero.svg\" width=\"50%\" height=\"50%\">";
     break;
 case "House Arryn of the Eyrie":
     var el = document.getElementById("player2");
@@ -380,7 +380,7 @@ function moving_green(d2){
 
 
 
-
+//help 
 /////////////////////////////////////////////////////////////////help
 
 function hasWon(currentTile, player) {
@@ -390,18 +390,27 @@ function hasWon(currentTile, player) {
         
        // localstorage win = player
         if (player = "player 1"){
-            //localStorage.removeItem("Player 2");
-            window.location.href="Gol.html";
+        
            
+            localStorage.setItem("B" ,"player 1");
+            window.location.href="Gol.html"
+            
+            console.log(hasWon);
+           
+        }else{
+            localStorage.removeItem("Player 2"); 
         }
-        //if (Player = "player 2"){
-            //localStorage.removeItem("Player 1"); 
-          //  window.location.href='Gol.html';
+        if (player = "player 2") {
+            localStorage.setItem("G" ,"player 2");
            
-        //}
-       //window.open("gol.html");
+            window.location.href='Gol.html'
+           
+        }else{
+            localStorage.removeItem("Player 1"); 
+        }
+       
     
-       console.log(player);
+     
      
        
     }
@@ -411,6 +420,8 @@ function hasWon(currentTile, player) {
 }
 
 //////////////////////////////////////////////////////////////////
+
+
 
 
 
@@ -453,8 +464,6 @@ function myFeller(player){
 
 
 
-var isPlayer1InJail = true;
-var isPlayer2InJail = true;
 // ned teler 
 function myTellerFeller(){ 
     var timeleft = 30;

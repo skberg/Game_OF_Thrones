@@ -42,11 +42,9 @@ audio{
     filter: grayscale(50%);
 
   .logo_img  {
-    margin: 80px;
-
-   
-
-    
+    margin: 20px;
+    width: 40%;
+    z-index: -20px;
   }
   .under_log_texst{
     text-align: center;
@@ -162,7 +160,7 @@ audio{
   -webkit-filter: grayscale(50%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(50%);
-  background-color: #fff;
+    background-color: rgba(80, 80, 80, 0.767);
   border-radius: 25px;
 
 
@@ -171,8 +169,7 @@ audio{
     background-color: #375DAA;
     border-radius: 10px;
     padding: 14px;
-    
-    margin: 25px;
+    margin: 15px;
 
   }
 
@@ -231,7 +228,8 @@ audio{
   -webkit-filter: grayscale(50%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(50%);
-  background-color: #fff;
+  background-color: rgba(80, 80, 80, 0.767);
+  
   border-radius: 25px;
   .dice_venstere {
     float: center;
@@ -289,7 +287,8 @@ audio{
   border-radius: 0px 0px 20px 20px;
   background-color: #fff;
   .heding{
-    font-family: $gambord;;
+    font-family: $gambord;
+    color: $fontColr2;
     font-size: 6rem;
   }
   .main_texst{

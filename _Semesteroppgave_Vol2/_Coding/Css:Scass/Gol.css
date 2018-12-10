@@ -3,6 +3,10 @@
   font-family: Game of Tsrones;
   src: url(../../Game.of.thrones.font/GameofThrones.woff);
 }
+@font-face {
+  font-family: Gamnord;
+  src: url(../../Game.of.thrones.font/higher_marisa_passos/Higher.ttf);
+}
 body {
   background-color: rgba(17, 15, 10, 0.904) !important;
 }
@@ -14,13 +18,13 @@ body {
   filter: grayscale(50%);
 }
 .logo .logo_img {
-  width: 300px;
+  width: 40%;
 }
 .logo .under_log_texst {
   text-align: center;
   color: #d4af37;
-  font-size: 10px;
-  font-family: "Game of Tsrones";
+  font-size: 40px;
+  font-family: "Gamnord";
 }
 .logo .hr_syl {
   border: 0;
@@ -56,6 +60,7 @@ body {
   bottom: 0;
   left: 34%;
   right: 34%;
+  font-family: "Gamnord";
   -webkit-animation-name: example;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 6s;

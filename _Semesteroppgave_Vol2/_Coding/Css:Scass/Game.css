@@ -23,7 +23,9 @@ audio {
   filter: grayscale(50%);
 }
 .logo .logo_img {
-  margin: 80px;
+  margin: 20px;
+  width: 40%;
+  z-index: -20px;
 }
 .logo .under_log_texst {
   text-align: center;
@@ -100,14 +102,14 @@ audio {
   -webkit-filter: grayscale(50%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(50%);
-  background-color: #fff;
+  background-color: rgba(80, 80, 80, 0.767);
   border-radius: 25px;
 }
 .disk .Disk_Img_1 {
   background-color: #375DAA;
   border-radius: 10px;
   padding: 14px;
-  margin: 25px;
+  margin: 15px;
 }
 .disk .dice {
   float: center;
@@ -151,7 +153,7 @@ audio {
   -webkit-filter: grayscale(50%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(50%);
-  background-color: #fff;
+  background-color: rgba(80, 80, 80, 0.767);
   border-radius: 25px;
 }
 .disk_venster .dice_venstere {
@@ -198,6 +200,7 @@ audio {
 }
 .intro_texst .heding {
   font-family: "Gamnord";
+  color: rgba(212, 175, 55, 0.747);
   font-size: 6rem;
 }
 .intro_texst .main_texst {

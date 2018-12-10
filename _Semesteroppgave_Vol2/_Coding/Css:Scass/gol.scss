@@ -1,5 +1,6 @@
 $GamFont: 'Game of Tsrones';
 $introFont: 'Julius Sans One',sans-serif;
+$gambord: 'Gamnord';
 $fontColr: rgb(212, 175, 55);
 $fontColr2: rgba(212, 175, 55, 0.747);
 
@@ -8,6 +9,11 @@ $fontColr2: rgba(212, 175, 55, 0.747);
   font-family: Game of Tsrones;
   src: url(../../Game.of.thrones.font/GameofThrones.woff);
 }
+
+@font-face{
+    font-family: Gamnord;
+    src: url(../../Game.of.thrones.font/higher_marisa_passos/Higher.ttf);
+  }
 
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
 
@@ -26,7 +32,7 @@ body {
   
     .logo_img  {
 
-        width: 300px;
+        width: 40%;
   
     }
   
@@ -34,8 +40,8 @@ body {
         text-align: center;
         color: $fontColr;
      
-        font-size: 10px;
-        font-family: $GamFont;
+        font-size: 40px;
+        font-family: $gambord;
 
           
     } 
@@ -66,7 +72,8 @@ body {
     -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
   
     .items {                                                    //item is the img for localShorets. the winner              
-        text-align: center;   
+        text-align: center;  
+        
     }
 
 }
@@ -81,7 +88,7 @@ body {
     
     left: 34%;
     right: 34%;
-
+    font-family: $gambord ;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
     
