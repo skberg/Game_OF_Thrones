@@ -24,7 +24,8 @@ body {
 
 .logo {
   text-align: center;
- 
+ max-width: 900px;
+ margin: auto;;
     -webkit-filter: grayscale(50%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(50%);
@@ -51,9 +52,17 @@ body {
       height: 1px;
       width: 50%;
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(212, 175, 52, 0.75), rgba(0, 0, 0, 0));
-      }
+      -webkit-animation-name: hr; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+      
+    }
   }
+  @-webkit-keyframes hr{                           //anmiasjon for the whit column 
+    0% { white: 0%; }
+    100%{ width: 100%;}
 
+
+}
 
   
 
@@ -76,6 +85,7 @@ body {
         text-align: center;  
         
     }
+
 
 }
 .moving{                                                        ///the main column whit nr 1
@@ -101,10 +111,43 @@ body {
 
 }
 
+.item_tesxt{
+    font-size: 20px;
+
+}
 
 
 
 
+
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid $fontColr; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    max-width: 820px;
+text-align: center;
+    
+    animation: 
+      typing 3.5s steps(50, end),
+      blink-caret .75s step-end infinite;
+      color: #fff;
+      font-display: $introFont;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $fontColr; }
+  }
 
 
 

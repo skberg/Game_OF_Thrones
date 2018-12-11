@@ -41,10 +41,6 @@ body {
 
 
 }
-
-
-
-
 .hr_syl{
   border: 0;
 height: 1px;
@@ -59,8 +55,6 @@ background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(212, 175, 52,
 
   max-width: 2000px;
   margin:0 auto;
-
-
 
 #Conts {
 
@@ -152,31 +146,44 @@ background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(212, 175, 52,
       display: inline;
       text-align: center;
       font-size: 30px;
-     
-
       text-decoration: underline #375DAA;
-      text-transform: uppercase;
       font-family: $GamFont;
       color: rgba(128, 128, 128, 0.747);
+
+      .Player_color_1{
+        background-color: #375DAA;
+        display: inline;
+        color: #375DAA;
+        margin: 9px;
+        padding-right: 30px;
+        height: 20px;
+        
+      }
     }
 
     .Player2 {
-     
       display: inline;
       text-align: center;
       font-size: 30px;
-
+      
       text-decoration: underline #57883D;
       text-transform: uppercase;
       font-family: $GamFont;
       color: rgba(128, 128, 128, 0.747);
+
+      .Player_color_2{
+        
+        background-color: #57883D;
+        display: inline;
+        color: #57883D;
+        margin: 9px;
+        padding-right: 30px;
+        height: 20px;
+        
+      }
     }
 
-    input {
-      background-color: transparent;
-      border: transparent;
-      
-    }
+    
 
     
     .Button_Go {

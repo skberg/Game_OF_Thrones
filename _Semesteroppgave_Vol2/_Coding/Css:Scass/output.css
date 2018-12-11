@@ -98,9 +98,16 @@ body {
   text-align: center;
   font-size: 30px;
   text-decoration: underline #375DAA;
-  text-transform: uppercase;
   font-family: "Game of Tsrones";
   color: rgba(128, 128, 128, 0.747);
+}
+.center_Contst #Conts .players .Player1 .Player_color_1 {
+  background-color: #375DAA;
+  display: inline;
+  color: #375DAA;
+  margin: 9px;
+  padding-right: 30px;
+  height: 20px;
 }
 .center_Contst #Conts .players .Player2 {
   display: inline;
@@ -111,9 +118,13 @@ body {
   font-family: "Game of Tsrones";
   color: rgba(128, 128, 128, 0.747);
 }
-.center_Contst #Conts .players input {
-  background-color: transparent;
-  border: transparent;
+.center_Contst #Conts .players .Player2 .Player_color_2 {
+  background-color: #57883D;
+  display: inline;
+  color: #57883D;
+  margin: 9px;
+  padding-right: 30px;
+  height: 20px;
 }
 .center_Contst #Conts .players .Button_Go {
   border: none;

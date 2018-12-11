@@ -47,7 +47,54 @@ switch (localStorage.getItem("player 1")) {
 
 }
 
-  
+
+
+//prisen icon
+switch (localStorage.getItem("player 1")) { 
+    case "House Algood":
+        var el = document.getElementById("player_blue");
+        el.innerHTML="<img src=\"./Bilde/Icons/Algood_Gul.svg\" width=\"50%\" height=\"50%\">";
+        break;
+    case "House Allyrion of Godsgrace":
+        var el = document.getElementById("player_blue");
+        el.innerHTML="<img src=\"./Bilde/Icons/Hand_Dark_Red.svg\" width=\"50%\" height=\"50%\">";
+        break;
+
+    case "House Amber":
+        var el = document.getElementById("player_blue");
+        el.innerHTML="<img src=\"./Bilde/Banner_Whater.svg\" width=\"50%\" height=\"50%\">";
+        break;
+    case "House Ambrose":
+        var el = document.getElementById("player_blue");
+        el.innerHTML="<img src=\"./Bilde/Icons/Red_Mauer.svg\" width=\"50%\" height=\"50%\">";
+        break;
+    case "House Appleton of Appleton":
+        var el = document.getElementById("player_blue");
+        el.innerHTML="<img src=\"./Bilde/Icons/Wood_Kind_Gray.svg\" width=\"50%\" height=\"50%\">";
+        break;
+    case "House Arryn of Gulltown":
+        var el = document.getElementById("player_blue");
+        el.innerHTML="<img src=\"./Bilde/Icons/Blue_Hero.svg\" width=\"50%\" height=\"50%\">";
+        break;
+    case "House Arryn of the Eyrie":
+        var el = document.getElementById("player_blue");
+        el.innerHTML="<img src=\"./Bilde/Icons/Blue_Hero.svg\" width=\"50%\" height=\"50%\">";
+        break;
+    case "House Ashford of Ashford":
+        var el = document.getElementById("player_blue");
+        el.innerHTML = "<img src=\"./Bilde/Icons/Orang_son.svg\" width=\"50%\" height=\"50%\">";
+        break;
+    case "House Ashwood":
+        var el = document.getElementById("player_blue");
+        el.innerHTML = "<img src=\"./Bilde/Icons/Red_Skog.svg\" width=\"50%\" height=\"50%\">";
+        break;
+    case "House Baelish of Harrenhal":
+        var el = document.getElementById("player_blue");
+        el.innerHTML="<img src=\"./Bilde/Icons/Man_GReen_Fame.svg\" width=\"50%\" height=\"50%\">";
+        break;
+
+    default:
+}
 
 //plaserer på venstere under dice1
 switch (localStorage.getItem("player 1")) {
@@ -98,56 +145,10 @@ switch (localStorage.getItem("player 1")) {
 
 }
 
-                                                            //plaserer på høyere av siden under dice2
-switch (localStorage.getItem("player 2")) {
-    case "House Algood":
-    var el = document.getElementById("player_2_v");
-    el.innerHTML="<img src=\"./Bilde/Icons/Algood_Gul.svg\" width=\"50%\" height=\"50%\">";
-    break;
-case "House Allyrion of Godsgrace":
-    var el = document.getElementById("player_2_v");
-    el.innerHTML="<img src=\"./Bilde/Icons/Hand_Dark_Red.svg\" width=\"50%\" height=\"50%\">";
-    break;
-
-case "House Amber":
-    var el = document.getElementById("player_2_v");
-    el.innerHTML="<img src=\"./Bilde/Banner_Whater.svg\" width=\"50%\" height=\"50%\">";
-    break;
-case "House Ambrose":
-    var el = document.getElementById("player_2_v");
-    el.innerHTML="<img src=\"./Bilde/Icons/Red_Mauer.svg\" width=\"50%\" height=\"50%\">";
-    break;
-case "House Appleton of Appleton":
-    var el = document.getElementById("player_2_v");
-    el.innerHTML="<img src=\"./Bilde/Icons/Wood_Kind_Gray.svg\" width=\"50%\" height=\"50%\">";
-    break;
-case "House Arryn of Gulltown":
-    var el = document.getElementById("player_2_v");
-    el.innerHTML="<img src=\"./Bilde/Icons/Blue_Hero.svg\" width=\"50%\" height=\"50%\">";
-    break;
-case "House Arryn of the Eyrie":
-    var el = document.getElementById("player_2_v");
-    el.innerHTML="<img src=\"./Bilde/Icons/Blue_Hero.svg\" width=\"50%\" height=\"50%\">";
-    break;
-case "House Ashford of Ashford":
-    var el = document.getElementById("player_2_v");
-    el.innerHTML = "<img src=\"./Bilde/Icons/Orang_son.svg\" width=\"50%\" height=\"50%\">";
-    break;
-case "House Ashwood":
-    var el = document.getElementById("player_2_v");
-    el.innerHTML = "<img src=\"./Bilde/Icons/Red_Skog.svg\" width=\"50%\" height=\"50%\">";
-    break;
-case "House Baelish of Harrenhal":
-    var el = document.getElementById("player_2_v");
-    el.innerHTML="<img src=\"./Bilde/Icons/Man_GReen_Fame.svg\" width=\"50%\" height=\"50%\">";
-    break;
 
 
-    default:
-        console.log("work, no info")
-}
 
-                                                            //plaserer på starts linje 
+// moving objekt
 switch (localStorage.getItem("player 2")) {
     case "House Algood":
     var el = document.getElementById("player2");
@@ -197,17 +198,107 @@ case "House Baelish of Harrenhal":
 }
 
 
+//dice2
+switch (localStorage.getItem("player 2")) {
+    case "House Algood":
+    var el = document.getElementById("player_2_v");
+    el.innerHTML="<img src=\"./Bilde/Icons/Algood_Gul.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Allyrion of Godsgrace":
+    var el = document.getElementById("player_2_v");
+    el.innerHTML="<img src=\"./Bilde/Icons/Hand_Dark_Red.svg\" width=\"50%\" height=\"50%\">";
+    break;
+
+case "House Amber":
+    var el = document.getElementById("player_2_v");
+    el.innerHTML="<img src=\"./Bilde/Banner_Whater.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Ambrose":
+    var el = document.getElementById("player_2_v");
+    el.innerHTML="<img src=\"./Bilde/Icons/Red_Mauer.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Appleton of Appleton":
+    var el = document.getElementById("player_2_v");
+    el.innerHTML="<img src=\"./Bilde/Icons/Wood_Kind_Gray.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Arryn of Gulltown":
+    var el = document.getElementById("player_2_v");
+    el.innerHTML="<img src=\"./Bilde/Icons/Blue_Hero.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Arryn of the Eyrie":
+    var el = document.getElementById("player_2_v");
+    el.innerHTML="<img src=\"./Bilde/Icons/Blue_Hero.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Ashford of Ashford":
+    var el = document.getElementById("player_2_v");
+    el.innerHTML = "<img src=\"./Bilde/Icons/Orang_son.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Ashwood":
+    var el = document.getElementById("player_2_v");
+    el.innerHTML = "<img src=\"./Bilde/Icons/Red_Skog.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Baelish of Harrenhal":
+    var el = document.getElementById("player_2_v");
+    el.innerHTML="<img src=\"./Bilde/Icons/Man_GReen_Fame.svg\" width=\"50%\" height=\"50%\">";
+    break;
+
+
+    default:
+        console.log("work, no info")
+}
+
+//prisen icon                                                         
+switch (localStorage.getItem("player 2")) {
+    case "House Algood":
+    var el = document.getElementById("player_Green");
+    el.innerHTML="<img src=\"./Bilde/Icons/Algood_Gul.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Allyrion of Godsgrace":
+    var el = document.getElementById("player_Green");
+    el.innerHTML="<img src=\"./Bilde/Icons/Hand_Dark_Red.svg\" width=\"50%\" height=\"50%\">";
+    break;
+
+case "House Amber":
+    var el = document.getElementById("player_Green");
+    el.innerHTML="<img src=\"./Bilde/Banner_Whater.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Ambrose":
+    var el = document.getElementById("player_Green");
+    el.innerHTML="<img src=\"./Bilde/Icons/Red_Mauer.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Appleton of Appleton":
+    var el = document.getElementById("player_Green");
+    el.innerHTML="<img src=\"./Bilde/Icons/Wood_Kind_Gray.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Arryn of Gulltown":
+    var el = document.getElementById("player_Green");
+    el.innerHTML="<img src=\"./Bilde/Icons/Blue_Hero.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Arryn of the Eyrie":
+    var el = document.getElementById("player_Green");
+    el.innerHTML="<img src=\"./Bilde/Icons/Blue_Hero.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Ashford of Ashford":
+    var el = document.getElementById("player_Green");
+    el.innerHTML = "<img src=\"./Bilde/Icons/Orang_son.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Ashwood":
+    var el = document.getElementById("player_Green");
+    el.innerHTML = "<img src=\"./Bilde/Icons/Red_Skog.svg\" width=\"50%\" height=\"50%\">";
+    break;
+case "House Baelish of Harrenhal":
+    var el = document.getElementById("player_Green");
+    el.innerHTML="<img src=\"./Bilde/Icons/Man_GReen_Fame.svg\" width=\"50%\" height=\"50%\">";
+    break;
+    default:
+    
+}
 
 
 
 
 
-//blue: #375DAA
-//green: 57883D
 
-/*
-document.getElementsByClassName("button_Disk ").bgcolor="#375DAA";
-*/
 
 
 var play1 = {
@@ -226,25 +317,24 @@ var play2 = {
 
 var start = 1;
 var bigin = 1;
-
-function rollDice() {                                          //dice player 1
-    var die1 = document.getElementById("die1");
+//dice player 1
+function rollDice() {
+var die1 = document.getElementById("die1");
 var i = 0;
 
-
-function delayRoling1(){                                           //rompa er deslay på dicen. 
+function delayRoling1() { //rompa er deslay på dicen. 
     document.getElementById("Button2").disabled = false;
-    document.getElementById("Button2").style.background='#ffff';   
+    document.getElementById("Button2").style.background = '#ffff';
     setTimeout(() => {
-        if(i == 15) {
+        if (i == 15) {
             var d1 = Math.floor(Math.random() * 6) + 1;
             die1.innerHTML = d1;
-          
+
             moving_blue(d1);
             document.getElementById("Button1").disabled = true;
-            document.getElementById("Button1").style.background='#666666';   
-                    
-        }else{
+            document.getElementById("Button1").style.background = '#666666';
+
+        } else {
             var d1 = Math.floor(Math.random() * 6) + 1;
             die1.innerHTML = d1;
             i++;
@@ -262,7 +352,7 @@ delayRoling1();
 
 
 
-
+//dice2 
 function rollDice_2() {   
                                 //dice player 2
     var die2 = document.getElementById("die2");
@@ -300,40 +390,27 @@ function rollDice_2() {
 
 
 function moving_blue(d1){
-
     var spillertur = 1;
-
     var player1 = document.getElementById("player1");
-  
-
     if( spillertur == 1 ){
         spillertur = 2;
     } else {
         spillertur = 2;
     }
-    var brikke = document.getElementById(start);
-
-    
-            //Card Standar farge 
-
-
+    var brikke = document.getElementById(start); 
     for(i = 0; i < d1; i++){
         setTimeout(function(){
-           
-            start = start + 1   
-                             //forteller at nå dy trykker på d2 så skal den bevege seg 1 utifra det tallet 
-            hasWon(start, "player 1");
+            start = start + 1                   // moving the icon form the number the dice makes 
+                                               
+            hasWon(start, "player 1");              //the end herf 
          
-            brikke = document.getElementById(start);        // dyttter den på brikketene
-           
-         
-            brikke.appendChild(player1);  
-                               //flytter id
+            brikke = document.getElementById(start);       
+            brikke.appendChild(player1);          
         }, 450 * i)
      
     }
    
-    // brikke.style.backgroundColor = "#375DAA";               //independet color after players 
+               //independet color after players 
    myFeller(player1);
   
 }
@@ -395,14 +472,11 @@ function moving_green(d2){
 
 function hasWon(currentTile, player) {
     if (currentTile >= 48) {
-        console.log(player);
         if(player === "player 1"){
             localStorage.removeItem('player 2');
-            console.log("Removing data");
             window.location.href='Gol.html'
         }else if( player === "player 2"){
             localStorage.removeItem('player 1');
-            console.log("Removing data");
             window.location.href='Gol.html'
         }
     }
@@ -420,8 +494,7 @@ function hasWon(currentTile, player) {
 
 
 
-var adi = document.getElementById("myadio");                //The audio volium controll 
-adi.volume = 0.1;
+
  
 
 
@@ -430,7 +503,7 @@ adi.volume = 0.1;
 
 function myFeller(player){
 
-    var feller = [ 19, 20, 30, 40, 23, 32, 25, 28, 44, 43, 47 ];
+    var feller = [ 20, 30, 40, 23, 32, 50 ];
     for(var i = 0; i < feller.length; i++){
         if (feller[i] == start){ 
             test()
@@ -503,7 +576,7 @@ function Player2_ALert(){
 
 // player 2 timer
 function myTellerFeller(){ 
-    var timeleft = 30;
+    var timeleft = 15;
     var downloadTimer = setInterval(function(){
         document.getElementById("Button1").disabled = false;
         document.getElementById("Button1").style.background='#ffff'; 
@@ -542,7 +615,7 @@ function myTellerFeller(){
 //player 1 timer 
 
 function Player_01_TRapp(){ 
-    var timeleft = 30;
+    var timeleft = 15;
     var downloadTimer = setInterval(function(){
         
         document.getElementById("Button2").disabled = false;
